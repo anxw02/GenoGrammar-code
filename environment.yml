@@ -1,0 +1,15 @@
+name: genogramma
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python>=3.10
+  - prodigal
+  - mmseqs2
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - pip
+  - pip:
+      - fair-esm==2.0.0

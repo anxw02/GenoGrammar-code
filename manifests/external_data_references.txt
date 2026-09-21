@@ -1,0 +1,43 @@
+<HISTORICAL_ROOT>/paper_code/pipeline/08B1_formal_5fold_order_ssl.py:71:    "08_explicit_order_ssl" /
+<HISTORICAL_ROOT>/paper_code/pipeline/08B1_formal_5fold_order_ssl.py:77:    "07_1_ssl_encoder"
+<HISTORICAL_ROOT>/paper_code/pipeline/08B1_formal_5fold_order_ssl.py:82:    "01_1_ani_robustness" /
+<HISTORICAL_ROOT>/paper_code/pipeline/08B1_formal_5fold_order_ssl.py:88:    "08B_formal_5fold_order_ssl"
+<HISTORICAL_ROOT>/paper_code/pipeline/08B2_foldmatched_real_controls.py:75:    "08B_formal_5fold_order_ssl"
+<HISTORICAL_ROOT>/paper_code/pipeline/08B2_foldmatched_real_controls.py:80:    "08_explicit_order_ssl" /
+<HISTORICAL_ROOT>/paper_code/pipeline/08B2_foldmatched_real_controls.py:86:    "07_1_ssl_encoder" /
+<HISTORICAL_ROOT>/paper_code/pipeline/08B2_foldmatched_real_controls.py:92:    "06_family_esm2" /
+<HISTORICAL_ROOT>/paper_code/pipeline/08B2_foldmatched_real_controls.py:98:    "04_order_controls"
+<HISTORICAL_ROOT>/paper_code/pipeline/08B2_foldmatched_real_controls.py:112:        "04_GLOBAL_within_contig_shuffle.tsv.gz",
+<HISTORICAL_ROOT>/paper_code/pipeline/08B2_foldmatched_real_controls.py:117:    "08B2_foldmatched_real_controls"
+<HISTORICAL_ROOT>/paper_code/pipeline/08B2_foldmatched_real_controls.py:1703:        "04_per_genome_paired_ordering.csv",
+<HISTORICAL_ROOT>/paper_code/pipeline/08B2_foldmatched_real_controls.py:2413:        "00_STAGE08B2_definition.json"
+<HISTORICAL_ROOT>/paper_code/pipeline/08B2_foldmatched_real_controls.py:2695:        "08_STAGE08B2_summary.json"
+<HISTORICAL_ROOT>/paper_code/pipeline/10A_lineage95_order_ssl.py:66:    "08_explicit_order_ssl" /
+<HISTORICAL_ROOT>/paper_code/pipeline/10A_lineage95_order_ssl.py:72:    "01_1_ani_robustness" /
+<HISTORICAL_ROOT>/paper_code/pipeline/10A_lineage95_order_ssl.py:78:    "08B_formal_5fold_order_ssl"
+<HISTORICAL_ROOT>/paper_code/pipeline/10A_lineage95_order_ssl.py:83:    "09_content_only_baseline" /
+<HISTORICAL_ROOT>/paper_code/pipeline/10A_lineage95_order_ssl.py:89:    "10A_lineage95_order_ssl"
+<HISTORICAL_ROOT>/paper_code/pipeline/10A_lineage95_order_ssl.py:1885:        "09_STAGE10A_summary.json"
+<HISTORICAL_ROOT>/paper_code/pipeline/10A_lineage95_order_ssl.py:2075:        "00_STAGE10A_definition.json"
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:70:    "10A_lineage95_order_ssl"
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:73:STAGE10A_SUMMARY = (
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:75:    "09_STAGE10A_summary.json"
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:80:    "08_explicit_order_ssl" /
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:86:    "06_family_esm2" /
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:92:    "07_1_ssl_encoder" /
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:98:    "04_order_controls"
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:112:        "04_GLOBAL_within_contig_shuffle.tsv.gz",
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:117:    "10B_lineage95_real_controls"
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:291:    if not STAGE10A_SUMMARY.exists():
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:298:        STAGE10A_SUMMARY.read_text(
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:1649:        "04_per_genome_paired.csv",
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:2172:        "stage10A_status":
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:2234:        "00_STAGE10B_definition.json"
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:2319:            "Stage10A_primary_pass":
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:2420:        "stage10A_status":
+<HISTORICAL_ROOT>/paper_code/pipeline/10B_lineage95_real_controls.py:2489:        "08_STAGE10B_summary.json"
+<HISTORICAL_ROOT>/paper_code/pipeline/08A2_explicit_neighborhood_ssl_smoke.py:56:    "08_explicit_order_ssl" /
+<HISTORICAL_ROOT>/paper_code/pipeline/08A2_explicit_neighborhood_ssl_smoke.py:62:    "07_1_ssl_encoder" /
+<HISTORICAL_ROOT>/paper_code/pipeline/08A2_explicit_neighborhood_ssl_smoke.py:68:    "07_1_ssl_encoder"
+<HISTORICAL_ROOT>/paper_code/pipeline/08A2_explicit_neighborhood_ssl_smoke.py:73:    "01_1_ani_robustness" /
+<HISTORICAL_ROOT>/paper_code/pipeline/08A2_explicit_neighborhood_ssl_smoke.py:79:    "08_explicit_order_ssl_A2"

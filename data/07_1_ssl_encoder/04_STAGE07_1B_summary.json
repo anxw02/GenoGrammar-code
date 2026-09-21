@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-14T17:24:35.631512",
+  "phenotype_labels_used": false,
+  "genomes": 979,
+  "gene_tokens": 2548856,
+  "gene_bearing_contigs": 43376,
+  "adjacency_identity": 2505480,
+  "family_embedding_rows": 276517,
+  "outer_validation": "5-fold FINAL_nearclone_99_5_block",
+  "outer_fold_sizes": [
+    196,
+    196,
+    196,
+    196,
+    195
+  ],
+  "inner_validation_policy": "approximately 10% of outer-training genomes, selected as complete nearclone99.5 blocks",
+  "outer_holdout_used_for_training": false,
+  "outer_holdout_used_for_early_stopping": false,
+  "nearclone_block_leakage": false,
+  "cross_contig_gene_adjacency": false,
+  "stage07_1A_smoke_test": "PASS",
+  "next_stage": "Stage07.1C formal 5-fold hierarchical SSL training"
+}

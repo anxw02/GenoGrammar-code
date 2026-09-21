@@ -1,0 +1,27 @@
+{
+  "stage": "07.1C",
+  "name": "Leakage-controlled 5-fold hierarchical self-supervised Genome-Grammar Encoder",
+  "timestamp": "2026-09-14T17:31:41.804603",
+  "phenotype_labels_used": false,
+  "outer_validation": "5-fold grouped by FINAL_nearclone_99_5_block",
+  "outer_holdout_used_for_training": false,
+  "outer_holdout_used_for_early_stopping": false,
+  "max_epochs": 20,
+  "early_stopping_patience": 4,
+  "train_chunks_per_view": 8,
+  "inner_val_chunks_per_view": 12,
+  "outer_chunks_per_view": 16,
+  "batch_genomes": 2,
+  "gradient_accumulation": 4,
+  "mask_ratio": 0.15,
+  "loss_weights": {
+    "masked_ESM_reconstruction": 1.0,
+    "adjacency_discrimination": 0.5,
+    "genome_contrastive": 0.2
+  },
+  "learning_rate": 0.0002,
+  "weight_decay": 0.0001,
+  "gradient_checkpointing": true,
+  "mixed_precision": "FP16",
+  "cross_contig_gene_adjacency": false
+}

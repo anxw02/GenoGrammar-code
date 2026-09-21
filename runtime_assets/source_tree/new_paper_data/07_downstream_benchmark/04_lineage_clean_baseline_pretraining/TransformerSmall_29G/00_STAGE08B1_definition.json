@@ -1,0 +1,47 @@
+{
+  "stage": "Stage08B1",
+  "created": "2026-09-19T16:19:01.912651",
+  "stage08A_status": "FAIL_FROZEN",
+  "stage08A2_status": "FAIL_FROZEN",
+  "stage08A2B_status": "PASS_DIAGNOSTIC",
+  "stage08A3_status": "PASS_REAL_CONTROL_DIAGNOSTIC",
+  "architecture": "ExplicitNeighborhoodEncoder",
+  "architecture_source": "/root/autodl-tmp/axw/paper_code/pipeline/revision_modules/08A2_revision_context_ssl.py",
+  "architecture_sha256": "1846022c91ca3585c670a8de782775fe6a9c2759d9ff17bc2a099a2e32d43c16",
+  "outer_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "fold_seeds": {
+    "1": 42,
+    "2": 142,
+    "3": 242,
+    "4": 342,
+    "5": 442
+  },
+  "epochs": 5,
+  "steps_per_epoch": 400,
+  "batch_size": 48,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "inner_validation_fraction": 0.15,
+  "nearclone_group": "99.5% ANI",
+  "primary_thresholds": {
+    "shuffle_accuracy": 0.6,
+    "rank_fraction_global_gt_local": 0.8,
+    "global_displacement_mean": 0.05,
+    "global_minus_local": 0.03
+  },
+  "required_primary_pass_folds": 4,
+  "adjacency_metric_role": "secondary_diagnostic",
+  "neighbor_metric_role": "secondary_diagnostic",
+  "phenotype_labels_used": false,
+  "outer_holdout_used_for_training": false,
+  "outer_holdout_used_for_early_stopping": false,
+  "outer_holdout_used_for_model_selection": false,
+  "raw_fold_embeddings_directly_poolable": false,
+  "scientific_boundary": "Structural SSL validation only; no probiotic phenotype prediction."
+}

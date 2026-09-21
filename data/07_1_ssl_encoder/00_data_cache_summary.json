@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-14T17:24:35.608430",
+  "phenotype_labels_used": false,
+  "genomes": 979,
+  "gene_tokens": 2548856,
+  "gene_bearing_contigs": 43376,
+  "adjacency_identity": 2505480,
+  "family_row_encoding": "Stage06 embedding_row int32",
+  "strand_encoding": {
+    "+": 0,
+    "-": 1
+  },
+  "cross_contig_adjacency": false
+}

@@ -1,0 +1,178 @@
+{
+  "status": "PASS",
+  "stage": "Stage08B1",
+  "timestamp": "2026-09-19T15:00:01.120205",
+  "architecture": "ExplicitNeighborhoodEncoder",
+  "architecture_source": "/root/autodl-tmp/axw/paper_code/pipeline/revision_modules/08A2_revision_context_ssl.py",
+  "architecture_sha256": "1846022c91ca3585c670a8de782775fe6a9c2759d9ff17bc2a099a2e32d43c16",
+  "n_formal_outer_folds": 5,
+  "fold_seeds": {
+    "1": 42,
+    "2": 142,
+    "3": 242,
+    "4": 342,
+    "5": 442
+  },
+  "primary_thresholds": {
+    "shuffle_accuracy": 0.6,
+    "rank_fraction_global_gt_local": 0.8,
+    "global_displacement_mean": 0.05,
+    "global_minus_local": 0.03
+  },
+  "required_pass_folds": 4,
+  "primary_pass_folds": 5,
+  "formal_pass": true,
+  "fold_results": [
+    {
+      "outer_fold": 1,
+      "seed": 42,
+      "best_epoch": 5,
+      "n_train": 515,
+      "n_inner_val": 99,
+      "n_outer_test": 351,
+      "shuffle_accuracy": 0.334375,
+      "rank_fraction_global_gt_local": 0.9234375,
+      "strong_rank_fraction": 0.8583333333333333,
+      "local_displacement_mean": 0.14053749566276869,
+      "global_displacement_mean": 0.2876139536499977,
+      "global_minus_local": 0.14707645798722901,
+      "adjacency_accuracy": 0.61875,
+      "neighbor_top1_accuracy": 0.18489583333333334,
+      "primary_pass": true
+    },
+    {
+      "outer_fold": 2,
+      "seed": 142,
+      "best_epoch": 4,
+      "n_train": 748,
+      "n_inner_val": 149,
+      "n_outer_test": 68,
+      "shuffle_accuracy": 0.33229166666666665,
+      "rank_fraction_global_gt_local": 0.8838541666666667,
+      "strong_rank_fraction": 0.7921875,
+      "local_displacement_mean": 0.13097882643342018,
+      "global_displacement_mean": 0.22209808925787608,
+      "global_minus_local": 0.0911192628244559,
+      "adjacency_accuracy": 0.5921875,
+      "neighbor_top1_accuracy": 0.15989583333333332,
+      "primary_pass": true
+    },
+    {
+      "outer_fold": 3,
+      "seed": 242,
+      "best_epoch": 4,
+      "n_train": 648,
+      "n_inner_val": 149,
+      "n_outer_test": 168,
+      "shuffle_accuracy": 0.3333333333333333,
+      "rank_fraction_global_gt_local": 0.928125,
+      "strong_rank_fraction": 0.8619791666666666,
+      "local_displacement_mean": 0.13027806455890337,
+      "global_displacement_mean": 0.2600231950481733,
+      "global_minus_local": 0.12974513048926992,
+      "adjacency_accuracy": 0.621875,
+      "neighbor_top1_accuracy": 0.20833333333333334,
+      "primary_pass": true
+    },
+    {
+      "outer_fold": 4,
+      "seed": 342,
+      "best_epoch": 5,
+      "n_train": 648,
+      "n_inner_val": 103,
+      "n_outer_test": 214,
+      "shuffle_accuracy": 0.33368055555555554,
+      "rank_fraction_global_gt_local": 0.9229166666666667,
+      "strong_rank_fraction": 0.8552083333333333,
+      "local_displacement_mean": 0.128186238805453,
+      "global_displacement_mean": 0.2595599969228109,
+      "global_minus_local": 0.1313737581173579,
+      "adjacency_accuracy": 0.6177083333333333,
+      "neighbor_top1_accuracy": 0.23229166666666667,
+      "primary_pass": true
+    },
+    {
+      "outer_fold": 5,
+      "seed": 442,
+      "best_epoch": 5,
+      "n_train": 701,
+      "n_inner_val": 100,
+      "n_outer_test": 164,
+      "shuffle_accuracy": 0.3385416666666667,
+      "rank_fraction_global_gt_local": 0.9328125,
+      "strong_rank_fraction": 0.8625,
+      "local_displacement_mean": 0.12385561515887579,
+      "global_displacement_mean": 0.24773038824399313,
+      "global_minus_local": 0.12387477308511734,
+      "adjacency_accuracy": 0.6322916666666667,
+      "neighbor_top1_accuracy": 0.21458333333333332,
+      "primary_pass": true
+    }
+  ],
+  "aggregate_outer_metrics": {
+    "shuffle_accuracy": {
+      "mean": 0.33444444444444443,
+      "sd": 0.0024106326330152624,
+      "median": 0.33368055555555554,
+      "min": 0.33229166666666665,
+      "max": 0.3385416666666667
+    },
+    "rank_fraction_global_gt_local": {
+      "mean": 0.9182291666666667,
+      "sd": 0.019629958901086188,
+      "median": 0.9234375,
+      "min": 0.8838541666666667,
+      "max": 0.9328125
+    },
+    "strong_rank_fraction": {
+      "mean": 0.8460416666666666,
+      "sd": 0.030250060979047793,
+      "median": 0.8583333333333333,
+      "min": 0.7921875,
+      "max": 0.8625
+    },
+    "local_displacement_mean": {
+      "mean": 0.1307672481238842,
+      "sd": 0.006127276765766573,
+      "median": 0.13027806455890337,
+      "min": 0.12385561515887579,
+      "max": 0.14053749566276869
+    },
+    "global_displacement_mean": {
+      "mean": 0.2554051246245702,
+      "sd": 0.023686802173736077,
+      "median": 0.2595599969228109,
+      "min": 0.22209808925787608,
+      "max": 0.2876139536499977
+    },
+    "global_minus_local": {
+      "mean": 0.124637876500686,
+      "sd": 0.020609620770317246,
+      "median": 0.12974513048926992,
+      "min": 0.0911192628244559,
+      "max": 0.14707645798722901
+    },
+    "adjacency_accuracy": {
+      "mean": 0.6165624999999999,
+      "sd": 0.014797534047566483,
+      "median": 0.61875,
+      "min": 0.5921875,
+      "max": 0.6322916666666667
+    },
+    "neighbor_top1_accuracy": {
+      "mean": 0.2,
+      "sd": 0.028112941087641872,
+      "median": 0.20833333333333334,
+      "min": 0.15989583333333332,
+      "max": 0.23229166666666667
+    }
+  },
+  "phenotype_labels_used": false,
+  "nearclone_99_5_group_safe": true,
+  "outer_holdout_used_for_training": false,
+  "outer_holdout_used_for_early_stopping": false,
+  "outer_holdout_used_for_model_selection": false,
+  "raw_fold_embeddings_directly_poolable": false,
+  "scientific_boundary": "Formal leakage-controlled five-fold structural SSL qualification. Architecture was previously developed using Fold1 smoke diagnostics, so this is not a pristine prospective benchmark.",
+  "next_step": "Proceed to Stage08B2: fold-matched real Stage04 control evaluation."
+}

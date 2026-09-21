@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "phenotype_labels_used": false,
+  "stress_genomes": [
+    "STRAIN_000113",
+    "STRAIN_000111"
+  ],
+  "total_loss": 1.4974441528320312,
+  "reconstruction_loss": 1.0210258960723877,
+  "adjacency_loss": 0.6990767121315002,
+  "contrastive_loss": 0.6343994140625,
+  "finite_gradients": true,
+  "optimizer_step_completed": true,
+  "peak_cuda_memory_MiB": 360.4384765625,
+  "d_model": 256,
+  "chunk_size": 256,
+  "chunk_overlap": 32,
+  "cross_contig_gene_adjacency": false,
+  "next_stage": "07.1B formal leakage-controlled 5-fold SSL"
+}

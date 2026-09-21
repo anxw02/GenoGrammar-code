@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "publication_model": "GenoGrammar",
+  "implementation_class": "ExplicitNeighborhoodEncoder",
+  "trainable_parameters": 508182,
+  "state_tensors": 37,
+  "strict_load_passed": 10,
+  "strict_load_expected": 10,
+  "all_formal_checkpoints_compatible": true,
+  "checkpoints": [
+    {
+      "stage": "Stage08B1",
+      "fold": 1,
+      "checkpoint": "<HISTORICAL_ROOT>/08B_formal_5fold_order_ssl/fold_1/best_checkpoint.pt",
+      "strict_load": "PASS",
+      "n_tensors": 37,
+      "n_parameters": 508182
+    },
+    {
+      "stage": "Stage08B1",
+      "fold": 2,
+      "checkpoint": "<HISTORICAL_ROOT>/08B_formal_5fold_order_ssl/fold_2/best_checkpoint.pt",
+      "strict_load": "PASS",
+      "n_tensors": 37,
+      "n_parameters": 508182
+    },
+    {
+      "stage": "Stage08B1",
+      "fold": 3,
+      "checkpoint": "<HISTORICAL_ROOT>/08B_formal_5fold_order_ssl/fold_3/best_checkpoint.pt",
+      "strict_load": "PASS",
+      "n_tensors": 37,
+      "n_parameters": 508182
+    },
+    {
+      "stage": "Stage08B1",
+      "fold": 4,
+      "checkpoint": "<HISTORICAL_ROOT>/08B_formal_5fold_order_ssl/fold_4/best_checkpoint.pt",
+      "strict_load": "PASS",
+      "n_tensors": 37,
+      "n_parameters": 508182
+    },
+    {
+      "stage": "Stage08B1",
+      "fold": 5,
+      "checkpoint": "<HISTORICAL_ROOT>/08B_formal_5fold_order_ssl/fold_5/best_checkpoint.pt",
+      "strict_load": "PASS",
+      "n_tensors": 37,
+      "n_parameters": 508182
+    },
+    {
+      "stage": "Stage10A",
+      "fold": 1,
+      "checkpoint": "<HISTORICAL_ROOT>/10A_lineage95_order_ssl/fold_1/best_checkpoint.pt",
+      "strict_load": "PASS",
+      "n_tensors": 37,
+      "n_parameters": 508182
+    },
+    {
+      "stage": "Stage10A",
+      "fold": 2,
+      "checkpoint": "<HISTORICAL_ROOT>/10A_lineage95_order_ssl/fold_2/best_checkpoint.pt",
+      "strict_load": "PASS",
+      "n_tensors": 37,
+      "n_parameters": 508182
+    },
+    {
+      "stage": "Stage10A",
+      "fold": 3,
+      "checkpoint": "<HISTORICAL_ROOT>/10A_lineage95_order_ssl/fold_3/best_checkpoint.pt",
+      "strict_load": "PASS",
+      "n_tensors": 37,
+      "n_parameters": 508182
+    },
+    {
+      "stage": "Stage10A",
+      "fold": 4,
+      "checkpoint": "<HISTORICAL_ROOT>/10A_lineage95_order_ssl/fold_4/best_checkpoint.pt",
+      "strict_load": "PASS",
+      "n_tensors": 37,
+      "n_parameters": 508182
+    },
+    {
+      "stage": "Stage10A",
+      "fold": 5,
+      "checkpoint": "<HISTORICAL_ROOT>/10A_lineage95_order_ssl/fold_5/best_checkpoint.pt",
+      "strict_load": "PASS",
+      "n_tensors": 37,
+      "n_parameters": 508182
+    }
+  ]
+}

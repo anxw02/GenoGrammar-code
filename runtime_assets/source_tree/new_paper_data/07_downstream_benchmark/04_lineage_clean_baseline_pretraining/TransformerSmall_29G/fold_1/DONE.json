@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "formal_outer_fold": 1,
+  "seed": 42,
+  "best_epoch": 5,
+  "primary_pass": true,
+  "criteria": {
+    "shuffle_accuracy_pass": false,
+    "rank_fraction_pass": true,
+    "global_displacement_pass": false,
+    "global_minus_local_pass": false
+  },
+  "outer_metrics": {
+    "loss": 1.1770908862352372,
+    "shuffle_accuracy": 0.3333333333333333,
+    "rank_fraction_global_gt_local": 0.9447916666666667,
+    "strong_rank_fraction": 0.0,
+    "local_displacement_mean": 0.00036843490476409595,
+    "global_displacement_mean": 0.0008646938328941663,
+    "global_minus_local": 0.0004962589281300704,
+    "adjacency_accuracy": 0.5994791666666667,
+    "neighbor_top1_accuracy": 0.190625
+  },
+  "n_train": 515,
+  "n_inner_val": 99,
+  "n_outer_test": 351,
+  "phenotype_labels_used": false,
+  "outer_holdout_used_for_training": false,
+  "outer_holdout_used_for_early_stopping": false,
+  "outer_holdout_used_for_model_selection": false
+}

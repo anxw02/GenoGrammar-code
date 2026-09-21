@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "stage": "Stage10A",
+  "outer_fold": 1,
+  "seed": 42,
+  "best_epoch": 3,
+  "n_train": 603,
+  "n_inner_val": 141,
+  "n_outer_test": 221,
+  "n_train_lineages": 67,
+  "n_inner_val_lineages": 15,
+  "n_outer_test_lineages": 1,
+  "outer_metrics": {
+    "loss": 1.5556608438491821,
+    "shuffle_accuracy": 0.8432291666666667,
+    "rank_fraction_global_gt_local": 0.93125,
+    "strong_rank_fraction": 0.8932291666666666,
+    "local_displacement_mean": 0.07700667555133502,
+    "global_displacement_mean": 0.24365247736374537,
+    "global_minus_local": 0.16664580181241034,
+    "adjacency_accuracy": 0.6140625,
+    "neighbor_top1_accuracy": 0.1890625
+  },
+  "criteria": {
+    "shuffle_accuracy_pass": true,
+    "rank_fraction_pass": true,
+    "global_displacement_pass": true,
+    "global_minus_local_pass": true
+  },
+  "primary_pass": true,
+  "lineage_95_group_safe": true,
+  "phenotype_labels_used": false,
+  "outer_holdout_used_for_training": false,
+  "outer_holdout_used_for_early_stopping": false,
+  "outer_holdout_used_for_model_selection": false
+}

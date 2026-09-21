@@ -1,0 +1,35 @@
+{
+  "QC_pass_genomes": 994,
+  "QC_excluded_genomes": 1,
+  "learned_pair_records": 45683,
+  "raw_pair_records": 45683,
+  "nearclone_learned_blocks": 512,
+  "nearclone_raw_blocks": 488,
+  "nearclone_FINAL_robust_blocks": 488,
+  "lineage95_learned_blocks": 95,
+  "lineage95_raw_blocks": 92,
+  "lineage95_FINAL_robust_blocks": 92,
+  "nearclone_mode_stability": {
+    "edge_count_learned": 2514,
+    "edge_count_raw": 2763,
+    "edge_intersection": 2514,
+    "edge_union": 2763,
+    "edge_jaccard": 0.9098805646036916,
+    "strain_partner_set_unchanged": 843,
+    "strain_partner_set_changed": 151,
+    "strain_partner_set_stability": 0.8480885311871227
+  },
+  "lineage95_mode_stability": {
+    "edge_count_learned": 39253,
+    "edge_count_raw": 39392,
+    "edge_intersection": 39253,
+    "edge_union": 39392,
+    "edge_jaccard": 0.9964713647441105,
+    "strain_partner_set_unchanged": 975,
+    "strain_partner_set_changed": 19,
+    "strain_partner_set_stability": 0.9808853118712274
+  },
+  "PRIMARY_rows": 12,
+  "PRIMARY_unique_strains": 6,
+  "timestamp": "2026-09-14T10:23:24.681541"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-14T20:00:41.276679",
+  "outer_fold": 5,
+  "best_epoch": 6,
+  "best_inner_val_total_ssl_loss": 1.3210441854630792,
+  "outer_metrics": {
+    "n_genomes": 195,
+    "reconstruction_loss": 0.08387505121720143,
+    "adjacency_loss": 0.6914628064021086,
+    "contrastive_loss": 5.272983551025391,
+    "total_ssl_loss": 1.484203164623334
+  },
+  "outer_holdout_genomes": 195,
+  "outer_holdout_used_for_training": false,
+  "outer_holdout_used_for_early_stopping": false,
+  "nearclone_block_leakage": false,
+  "phenotype_labels_used": false,
+  "best_checkpoint_sha256": "1cae56967ef973fcdb7915136526930c95980647e6eff240e3a134e53d6b3a2e",
+  "embedding_space_id": "SSL_FOLD_5",
+  "embedding_dimension": 256,
+  "raw_fold_coordinates_poolable": false,
+  "important_boundary": "This fold encoder was trained independently. Raw latent coordinates must not be assumed aligned with other folds."
+}

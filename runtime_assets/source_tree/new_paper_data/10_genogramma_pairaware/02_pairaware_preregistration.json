@@ -1,0 +1,61 @@
+{
+  "status": "GENOGRAMMA_PAIRAWARE_PREREGISTERED_BEFORE_DOWNSTREAM_EVALUATION",
+  "formal_model_name": "GenoGramma",
+  "representation": {
+    "window_length": 64,
+    "target_pair_indices_0based": [
+      31,
+      32
+    ],
+    "dimension": 768,
+    "components": [
+      "target_left_token_128D",
+      "target_right_token_128D",
+      "absolute_token_difference_128D",
+      "elementwise_token_interaction_128D",
+      "contextual_target_edge_128D",
+      "whole_window_global_context_128D"
+    ],
+    "contextual_target_edge": "post edge_mlp + edge_conv1 + edge_conv2 + edge_norm; edge index 31 connects gene indices 31 and 32",
+    "encoder_frozen": true,
+    "target_pair_masked": false
+  },
+  "forbidden_direct_predictors": [
+    "DOOR2_operon_ID",
+    "genomic_coordinate",
+    "intergenic_distance",
+    "locus_tag",
+    "annotation_bridge_metadata",
+    "label_derived_feature"
+  ],
+  "evaluation": {
+    "outer_split": "existing frozen ANI95 lineage-blocked five-fold split",
+    "inner_validation": "lineage-blocked deterministic split from outer training only",
+    "outer_test": "first and only use after checkpoint selection",
+    "target_success_gate": {
+      "ROC_AUC": 0.7,
+      "PR_AUC": 0.7
+    }
+  },
+  "planned_pairaware_head": {
+    "input_dimension": 768,
+    "architecture": [
+      "Linear(768,128)",
+      "GELU",
+      "Dropout(0.20)",
+      "Linear(128,2)"
+    ],
+    "train_only_zscore": true,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "loss": "genome-balanced unweighted-class CrossEntropy",
+    "max_epochs": 100,
+    "min_epochs": 10,
+    "patience": 15,
+    "checkpoint_selection": "inner validation mean of ROC-AUC and PR-AUC",
+    "decision_threshold": 0.5
+  },
+  "canonical_model_module": "/root/autodl-tmp/axw/paper_code/pipeline/revision_modules/genogramma.py",
+  "canonical_model_module_sha256": "7579820f2324f101fa7412285233f9ab1d80548f234269a5ad7ef47a76be2e01"
+}

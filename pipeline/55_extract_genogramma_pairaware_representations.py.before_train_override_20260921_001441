@@ -1,0 +1,1063 @@
+from __future__ import annotations
+
+import os
+
+import hashlib
+import importlib.util
+import json
+import sys
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+import torch
+
+
+BASE = Path(__file__).resolve().parents[1]
+PAPER=BASE
+
+MOD=PAPER/"pipeline"/"revision_modules"
+
+sys.path.insert(
+    0,
+    str(MOD),
+)
+
+import genogramma as gg
+
+
+# =============================================================================
+# FORMAL INPUTS
+# =============================================================================
+
+INPUT_NPZ=(
+    BASE / "runtime_assets" / "source_tree" / "new_paper_data"
+    / "08_stage50_order_dependent_downstream"
+    / "07_pair_to_genogrammar_alignment"
+    / "13_STAGE50_operon_formal_model_inputs.npz"
+)
+
+EXPECTED_INPUT_SHA=(
+    "978e233098e4ccda12460e821d01fb076"
+    "26f909d8afd4dafa2737c867081ab3e"
+)
+
+FAMILY_EMBEDDINGS=(
+    BASE
+    / "model_assets"
+    / "family_embeddings"
+    / "00_family_embeddings_276517x480.npy"
+)
+
+CORE_SOURCE=(
+    MOD
+    / "08A2_revision_context_ssl.py"
+)
+
+CHECKPOINT_ROOT=(
+    BASE
+    / "checkpoints"
+    / "genogramma_formal"
+)
+
+OUT=(
+    Path(os.environ.get("GENOGRAMMA_RESULT_ROOT", str(BASE / "runtime_assets" / "source_tree" / "new_paper_data" / "10_genogramma_pairaware"))) / '03_stage55_pairaware_representations'
+)
+
+REP_ROOT=OUT/"representations"
+
+INDEX_CSV=(
+    OUT
+    / "55_pairaware_representation_index.csv"
+)
+
+FREEZE_JSON=(
+    OUT
+    / "55_pairaware_representation_freeze.json"
+)
+
+
+N=164302
+WINDOW_LEN=64
+FAMILY_DIM=480
+TOKEN_DIM=128
+REP_DIM=768
+
+EXPECTED_PARAMS=508187
+
+LEFT=31
+RIGHT=32
+
+BATCH_SIZE=256
+
+
+def sha256(path: Path):
+    h=hashlib.sha256()
+
+    with path.open("rb") as f:
+        for block in iter(
+            lambda:f.read(
+                1024*1024
+            ),
+            b"",
+        ):
+            h.update(block)
+
+    return h.hexdigest()
+
+
+def load_module(
+    name,
+    path,
+):
+    spec=(
+        importlib.util
+        .spec_from_file_location(
+            name,
+            str(path),
+        )
+    )
+
+    if (
+        spec is None
+        or
+        spec.loader is None
+    ):
+        raise RuntimeError(
+            f"Cannot import {path}"
+        )
+
+    mod=(
+        importlib.util
+        .module_from_spec(
+            spec
+        )
+    )
+
+    sys.modules[name]=mod
+
+    spec.loader.exec_module(
+        mod
+    )
+
+    return mod
+
+
+def build_model(
+    fold,
+    device,
+):
+    ckpt_path=(
+        CHECKPOINT_ROOT
+        / f"fold_{fold}"
+        / "best_checkpoint.pt"
+    )
+
+    if not ckpt_path.exists():
+        raise RuntimeError(
+            f"Missing checkpoint: {ckpt_path}"
+        )
+
+    ckpt=torch.load(
+        ckpt_path,
+        map_location="cpu",
+        weights_only=False,
+    )
+
+    if (
+        not isinstance(
+            ckpt,
+            dict,
+        )
+        or
+        "model" not in ckpt
+    ):
+        raise RuntimeError(
+            f"Fold {fold}: invalid checkpoint"
+        )
+
+    if int(
+        ckpt.get(
+            "formal_outer_fold",
+            -1,
+        )
+    ) != fold:
+        raise RuntimeError(
+            f"Fold {fold}: outer-fold mismatch"
+        )
+
+    core=load_module(
+        f"stage55_core_f{fold}",
+        CORE_SOURCE,
+    )
+
+    model=gg.make_encoder(
+        core.ExplicitNeighborhoodEncoder
+    )
+
+    model.load_state_dict(
+        ckpt["model"],
+        strict=True,
+    )
+
+    n_params=sum(
+        p.numel()
+        for p in model.parameters()
+    )
+
+    if n_params != EXPECTED_PARAMS:
+        raise RuntimeError(
+            f"Fold {fold}: "
+            f"{n_params} parameters != "
+            f"{EXPECTED_PARAMS}"
+        )
+
+    for p in model.parameters():
+        p.requires_grad_(False)
+
+    if any(
+        p.requires_grad
+        for p in model.parameters()
+    ):
+        raise RuntimeError(
+            f"Fold {fold}: encoder not frozen"
+        )
+
+    model.to(device)
+    model.eval()
+
+    return (
+        model,
+        ckpt,
+        ckpt_path,
+        sha256(
+            ckpt_path
+        ),
+    )
+
+
+def validate_existing(
+    rep_path,
+    meta_path,
+    input_sha,
+    checkpoint_sha,
+):
+    if (
+        not rep_path.exists()
+        or
+        not meta_path.exists()
+    ):
+        return None
+
+    try:
+        meta=json.loads(
+            meta_path.read_text()
+        )
+
+        if (
+            meta.get("status")
+            !=
+            "FROZEN_PAIRAWARE_REPRESENTATION_PASS"
+        ):
+            return None
+
+        if (
+            meta.get(
+                "formal_input_sha256"
+            )
+            !=
+            input_sha
+        ):
+            return None
+
+        if (
+            meta.get(
+                "checkpoint_sha256"
+            )
+            !=
+            checkpoint_sha
+        ):
+            return None
+
+        arr=np.load(
+            rep_path,
+            mmap_mode="r",
+        )
+
+        if arr.shape != (
+            N,
+            REP_DIM,
+        ):
+            return None
+
+        if arr.dtype != np.float32:
+            return None
+
+        if (
+            sha256(rep_path)
+            !=
+            meta.get(
+                "representation_sha256"
+            )
+        ):
+            return None
+
+        return meta
+
+    except Exception:
+        return None
+
+
+def main():
+
+    print(
+        "="*100,
+        flush=True,
+    )
+
+    print(
+        "STAGE55 — GenoGramma "
+        "PAIR-AWARE FROZEN REPRESENTATION EXTRACTION",
+        flush=True,
+    )
+
+    print(
+        "="*100,
+        flush=True,
+    )
+
+    OUT.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    REP_ROOT.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    if not INPUT_NPZ.exists():
+        raise RuntimeError(
+            f"Missing input: {INPUT_NPZ}"
+        )
+
+    input_sha=sha256(
+        INPUT_NPZ
+    )
+
+    if (
+        input_sha
+        !=
+        EXPECTED_INPUT_SHA
+    ):
+        raise RuntimeError(
+            "Formal-input SHA mismatch"
+        )
+
+    data=np.load(
+        INPUT_NPZ,
+        mmap_mode="r",
+    )
+
+    required={
+        "family_rows",
+        "strand",
+        "label_index",
+        "outer_fold",
+        "row_index",
+    }
+
+    if not required.issubset(
+        data.files
+    ):
+        raise RuntimeError(
+            f"Missing NPZ keys: "
+            f"{sorted(required-set(data.files))}"
+        )
+
+    family_rows=data[
+        "family_rows"
+    ]
+
+    strand=data[
+        "strand"
+    ]
+
+    labels=data[
+        "label_index"
+    ]
+
+    folds=data[
+        "outer_fold"
+    ]
+
+    if family_rows.shape != (
+        N,
+        WINDOW_LEN,
+    ):
+        raise RuntimeError(
+            f"family_rows={family_rows.shape}"
+        )
+
+    if strand.shape != (
+        N,
+        WINDOW_LEN,
+    ):
+        raise RuntimeError(
+            f"strand={strand.shape}"
+        )
+
+    if sorted(
+        np.unique(
+            labels
+        ).astype(int).tolist()
+    ) != [0,1]:
+        raise RuntimeError(
+            "Unexpected labels"
+        )
+
+    if sorted(
+        np.unique(
+            folds
+        ).astype(int).tolist()
+    ) != [1,2,3,4,5]:
+        raise RuntimeError(
+            "Unexpected outer folds"
+        )
+
+    family_embeddings=np.load(
+        FAMILY_EMBEDDINGS,
+        mmap_mode="r",
+    )
+
+    if family_embeddings.shape != (
+        276517,
+        FAMILY_DIM,
+    ):
+        raise RuntimeError(
+            f"family embeddings="
+            f"{family_embeddings.shape}"
+        )
+
+    device=torch.device(
+        "cuda"
+        if torch.cuda.is_available()
+        else
+        "cpu"
+    )
+
+    print(
+        "[PASS] formal input SHA =",
+        input_sha,
+        flush=True,
+    )
+
+    print(
+        "[PASS] examples =",
+        N,
+        flush=True,
+    )
+
+    print(
+        "[PASS] pair indices =",
+        [LEFT,RIGHT],
+        flush=True,
+    )
+
+    print(
+        "[PASS] pair-aware dimension =",
+        REP_DIM,
+        flush=True,
+    )
+
+    print(
+        "[INFO] device =",
+        device,
+        flush=True,
+    )
+
+
+    rows=[]
+
+    for fold in range(
+        1,
+        6,
+    ):
+
+        print(
+            "\n"
+            +
+            "="*90,
+            flush=True,
+        )
+
+        print(
+            f"GenoGramma | fold {fold}/5",
+            flush=True,
+        )
+
+        print(
+            "="*90,
+            flush=True,
+        )
+
+        fold_dir=(
+            REP_ROOT
+            / "GenoGramma"
+            / f"fold_{fold}"
+        )
+
+        fold_dir.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        rep_path=(
+            fold_dir
+            / "pairaware_768D.npy"
+        )
+
+        tmp_path=(
+            fold_dir
+            / "pairaware_768D.tmp.npy"
+        )
+
+        meta_path=(
+            fold_dir
+            / "metadata.json"
+        )
+
+        ckpt_path=(
+            CHECKPOINT_ROOT
+            / f"fold_{fold}"
+            / "best_checkpoint.pt"
+        )
+
+        checkpoint_sha=sha256(
+            ckpt_path
+        )
+
+        existing=validate_existing(
+            rep_path,
+            meta_path,
+            input_sha,
+            checkpoint_sha,
+        )
+
+        if existing is not None:
+
+            print(
+                f"[SKIP] fold {fold}: "
+                "existing PASS",
+                flush=True,
+            )
+
+            rows.append(
+                existing
+            )
+
+            continue
+
+        (
+            model,
+            ckpt,
+            ckpt_path,
+            checkpoint_sha,
+        )=build_model(
+            fold,
+            device,
+        )
+
+        print(
+            "[PASS] strict checkpoint load",
+            flush=True,
+        )
+
+        print(
+            "[PASS] encoder parameters =",
+            EXPECTED_PARAMS,
+            flush=True,
+        )
+
+        if tmp_path.exists():
+            tmp_path.unlink()
+
+        reps=np.lib.format.open_memmap(
+            tmp_path,
+            mode="w+",
+            dtype=np.float32,
+            shape=(
+                N,
+                REP_DIM,
+            ),
+        )
+
+        n_batches=(
+            N
+            +
+            BATCH_SIZE
+            -
+            1
+        ) // BATCH_SIZE
+
+        with torch.inference_mode():
+
+            for batch_idx,start in enumerate(
+                range(
+                    0,
+                    N,
+                    BATCH_SIZE,
+                ),
+                start=1,
+            ):
+
+                end=min(
+                    start+BATCH_SIZE,
+                    N,
+                )
+
+                rows_np=np.asarray(
+                    family_rows[
+                        start:end
+                    ],
+                    dtype=np.int64,
+                )
+
+                strand_np=np.asarray(
+                    strand[
+                        start:end
+                    ],
+                    dtype=np.int64,
+                )
+
+                family_np=np.asarray(
+                    family_embeddings[
+                        rows_np
+                    ],
+                    dtype=np.float32,
+                )
+
+                family_t=(
+                    torch.from_numpy(
+                        family_np
+                    )
+                    .to(
+                        device,
+                        non_blocking=True,
+                    )
+                )
+
+                strand_t=(
+                    torch.from_numpy(
+                        strand_np
+                    )
+                    .to(
+                        device,
+                        non_blocking=True,
+                    )
+                )
+
+                token=(
+                    model.prepare_tokens(
+                        family_t,
+                        strand_t,
+                    )
+                )
+
+                if tuple(
+                    token.shape
+                ) != (
+                    end-start,
+                    64,
+                    128,
+                ):
+                    raise RuntimeError(
+                        f"Fold {fold}: "
+                        f"token shape="
+                        f"{tuple(token.shape)}"
+                    )
+
+                pair_rep=(
+                    gg.encode_pairaware(
+                        model,
+                        token,
+                        LEFT,
+                        RIGHT,
+                    )
+                )
+
+                if tuple(
+                    pair_rep.shape
+                ) != (
+                    end-start,
+                    REP_DIM,
+                ):
+                    raise RuntimeError(
+                        f"Fold {fold}: "
+                        f"pair rep shape="
+                        f"{tuple(pair_rep.shape)}"
+                    )
+
+                reps[
+                    start:end
+                ]=(
+                    pair_rep
+                    .detach()
+                    .cpu()
+                    .numpy()
+                    .astype(
+                        np.float32,
+                        copy=False,
+                    )
+                )
+
+                if (
+                    batch_idx==1
+                    or
+                    batch_idx%100==0
+                    or
+                    batch_idx==n_batches
+                ):
+                    print(
+                        f"[F{fold}] "
+                        f"batch "
+                        f"{batch_idx}/{n_batches} "
+                        f"rows="
+                        f"{end:,}/{N:,}",
+                        flush=True,
+                    )
+
+        reps.flush()
+        del reps
+
+        tmp_path.replace(
+            rep_path
+        )
+
+        arr=np.load(
+            rep_path,
+            mmap_mode="r",
+        )
+
+        if arr.shape != (
+            N,
+            REP_DIM,
+        ):
+            raise RuntimeError(
+                f"Fold {fold}: "
+                "final representation shape mismatch"
+            )
+
+        rep_sha=sha256(
+            rep_path
+        )
+
+        norms=np.linalg.norm(
+            arr,
+            axis=1,
+        )
+
+        meta={
+            "status":
+                "FROZEN_PAIRAWARE_REPRESENTATION_PASS",
+
+            "model":
+                "GenoGramma",
+
+            "fold":
+                fold,
+
+            "formal_outer_fold":
+                int(
+                    ckpt.get(
+                        "formal_outer_fold"
+                    )
+                ),
+
+            "checkpoint":
+                str(
+                    ckpt_path
+                ),
+
+            "checkpoint_sha256":
+                checkpoint_sha,
+
+            "formal_input":
+                str(
+                    INPUT_NPZ
+                ),
+
+            "formal_input_sha256":
+                input_sha,
+
+            "n_examples":
+                N,
+
+            "target_pair_indices_0based":
+                [LEFT,RIGHT],
+
+            "representation_dimension":
+                REP_DIM,
+
+            "representation_components":[
+                "left_token",
+                "right_token",
+                "absolute_token_difference",
+                "elementwise_token_interaction",
+                "contextual_target_edge",
+                "whole_window_global_context"
+            ],
+
+            "target_edge_index":
+                LEFT,
+
+            "target_pair_masked":
+                False,
+
+            "encoder_training_downstream":
+                False,
+
+            "encoder_trainable_parameters_downstream":
+                0,
+
+            "direct_operon_features_used":
+                False,
+
+            "representation_file":
+                str(
+                    rep_path
+                ),
+
+            "representation_sha256":
+                rep_sha,
+
+            "mean_L2_norm":
+                float(
+                    norms.mean()
+                ),
+
+            "sd_L2_norm":
+                float(
+                    norms.std()
+                ),
+        }
+
+        meta_path.write_text(
+            json.dumps(
+                meta,
+                indent=2,
+            )
+        )
+
+        rows.append(
+            meta
+        )
+
+        print(
+            f"[PASS] fold {fold}: "
+            f"representation="
+            f"{arr.shape}",
+            flush=True,
+        )
+
+
+    index=pd.DataFrame(
+        [
+            {
+                "model":
+                    x["model"],
+
+                "fold":
+                    x["fold"],
+
+                "status":
+                    x["status"],
+
+                "checkpoint":
+                    x["checkpoint"],
+
+                "checkpoint_sha256":
+                    x["checkpoint_sha256"],
+
+                "representation_file":
+                    x["representation_file"],
+
+                "representation_sha256":
+                    x["representation_sha256"],
+
+                "n_examples":
+                    x["n_examples"],
+
+                "representation_dimension":
+                    x["representation_dimension"],
+
+                "mean_L2_norm":
+                    x["mean_L2_norm"],
+
+                "sd_L2_norm":
+                    x["sd_L2_norm"],
+            }
+            for x in rows
+        ]
+    ).sort_values(
+        "fold"
+    )
+
+    if len(index) != 5:
+        raise RuntimeError(
+            f"Expected 5 folds, "
+            f"got {len(index)}"
+        )
+
+    if not (
+        index["status"]
+        ==
+        "FROZEN_PAIRAWARE_REPRESENTATION_PASS"
+    ).all():
+        raise RuntimeError(
+            "At least one fold failed"
+        )
+
+    INDEX_CSV.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    index.to_csv(
+        INDEX_CSV,
+        index=False,
+    )
+
+    freeze={
+        "status":
+            "ALL_5_GENOGRAMMA_PAIRAWARE_REPRESENTATIONS_PASS",
+
+        "model":
+            "GenoGramma",
+
+        "formal_input_sha256":
+            input_sha,
+
+        "n_examples":
+            N,
+
+        "n_folds":
+            5,
+
+        "representation_dimension":
+            REP_DIM,
+
+        "target_pair_indices_0based":
+            [LEFT,RIGHT],
+
+        "target_pair_masked":
+            False,
+
+        "encoder_training":
+            False,
+
+        "direct_operon_features_used":
+            False,
+
+        "representation_index":
+            str(
+                INDEX_CSV
+            ),
+
+        "representation_index_sha256":
+            sha256(
+                INDEX_CSV
+            ),
+
+        "canonical_module":
+            str(
+                Path(
+                    gg.__file__
+                ).resolve()
+            ),
+
+        "canonical_module_sha256":
+            sha256(
+                Path(
+                    gg.__file__
+                ).resolve()
+            ),
+
+        "script":
+            str(
+                Path(
+                    __file__
+                ).resolve()
+            ),
+
+        "script_sha256":
+            sha256(
+                Path(
+                    __file__
+                ).resolve()
+            ),
+    }
+
+    FREEZE_JSON.write_text(
+        json.dumps(
+            freeze,
+            indent=2,
+        )
+    )
+
+    print(
+        "\n"
+        +
+        "="*100,
+        flush=True,
+    )
+
+    print(
+        "[PASS] representations = 5 / 5",
+        flush=True,
+    )
+
+    print(
+        "[PASS] representation dimension = 768",
+        flush=True,
+    )
+
+    print(
+        "[PASS] target pair [31,32] retained",
+        flush=True,
+    )
+
+    print(
+        "[PASS] contextual edge index = 31",
+        flush=True,
+    )
+
+    print(
+        "[PASS] encoder training downstream = NONE",
+        flush=True,
+    )
+
+    print(
+        "[PASS] direct operon features = NONE",
+        flush=True,
+    )
+
+    print(
+        "[OUTPUT]",
+        INDEX_CSV,
+        flush=True,
+    )
+
+    print(
+        "ALL_5_GENOGRAMMA_PAIRAWARE_REPRESENTATIONS_PASS",
+        flush=True,
+    )
+
+    print(
+        "="*100,
+        flush=True,
+    )
+
+
+if __name__=="__main__":
+    main()

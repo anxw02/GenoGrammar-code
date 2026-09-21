@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "stage": "Stage09",
+  "timestamp": "2026-09-15T10:13:56.737035",
+  "n_genomes": 965,
+  "n_control_comparisons": 14475,
+  "trainable_parameters": 0,
+  "phenotype_labels_used": false,
+  "gene_order_used": false,
+  "control_summary": [
+    {
+      "control_type": "TIGHTBLOCK50",
+      "n": 4825,
+      "exact_multiset_match_fraction": 1.0,
+      "mean_displacement": 9.790671439958634e-17,
+      "median_displacement": 0.0,
+      "q95_displacement": 4.440892098500626e-16,
+      "q99_displacement": 6.661338147750939e-16,
+      "max_displacement": 7.771561172376096e-16
+    },
+    {
+      "control_type": "LOCAL_W10",
+      "n": 4825,
+      "exact_multiset_match_fraction": 1.0,
+      "mean_displacement": 9.790671439958634e-17,
+      "median_displacement": 0.0,
+      "q95_displacement": 4.440892098500626e-16,
+      "q99_displacement": 6.661338147750939e-16,
+      "max_displacement": 7.771561172376096e-16
+    },
+    {
+      "control_type": "GLOBAL_CONTIG",
+      "n": 4825,
+      "exact_multiset_match_fraction": 1.0,
+      "mean_displacement": 9.790671439958634e-17,
+      "median_displacement": 0.0,
+      "q95_displacement": 4.440892098500626e-16,
+      "q99_displacement": 6.661338147750939e-16,
+      "max_displacement": 7.771561172376096e-16
+    }
+  ],
+  "criteria": {
+    "TIGHTBLOCK50": {
+      "multiset_identity_pass": true,
+      "median_displacement_pass": true,
+      "max_displacement_pass": true
+    },
+    "LOCAL_W10": {
+      "multiset_identity_pass": true,
+      "median_displacement_pass": true,
+      "max_displacement_pass": true
+    },
+    "GLOBAL_CONTIG": {
+      "multiset_identity_pass": true,
+      "median_displacement_pass": true,
+      "max_displacement_pass": true
+    }
+  },
+  "all_acceptance_criteria_pass": true,
+  "stage08B2_explicit_order_summary": {
+    "n_genomes": 965,
+    "median_TIGHT": 0.013384628295898437,
+    "median_LOCAL": 0.06054874658584595,
+    "median_GLOBAL": 0.37848881483078,
+    "median_GLOBAL_minus_LOCAL": 0.3173833250999451,
+    "fraction_GLOBAL_gt_LOCAL": 1.0,
+    "fraction_GLOBAL_gt_TIGHT": 1.0,
+    "fraction_LOCAL_gt_TIGHT": 0.9989637305699481,
+    "fraction_full_GLOBAL_gt_LOCAL_gt_TIGHT": 0.9989637305699481
+  },
+  "comparison": [
+    {
+      "control_type": "TIGHTBLOCK50",
+      "content_only_median_displacement": 0.0,
+      "explicit_order_median_displacement": 0.013384628295898437,
+      "explicit_minus_content": 0.013384628295898437
+    },
+    {
+      "control_type": "LOCAL_W10",
+      "content_only_median_displacement": 0.0,
+      "explicit_order_median_displacement": 0.06054874658584595,
+      "explicit_minus_content": 0.06054874658584595
+    },
+    {
+      "control_type": "GLOBAL_CONTIG",
+      "content_only_median_displacement": 0.0,
+      "explicit_order_median_displacement": 0.37848881483078,
+      "explicit_minus_content": 0.37848881483078
+    }
+  ],
+  "scientific_conclusion": "Real Stage04 perturbations preserve gene-family content, and the order-invariant content representation is unchanged by those perturbations.",
+  "next_step": "Proceed to 95% ANI lineage-level robustness validation."
+}

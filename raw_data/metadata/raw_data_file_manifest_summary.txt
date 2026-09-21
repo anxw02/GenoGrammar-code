@@ -1,0 +1,4 @@
+total_files=1086
+public_accession_genomes=1068
+local_named_genomes=17
+metadata_sidecars=1

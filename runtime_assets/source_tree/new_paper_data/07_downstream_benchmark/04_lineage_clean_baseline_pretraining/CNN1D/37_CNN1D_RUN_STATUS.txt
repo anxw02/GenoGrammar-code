@@ -1,0 +1,5 @@
+model=CNN1D
+script=/root/autodl-tmp/axw/paper_code/pipeline/lineage_runs/29B_cnn1d_lineage95_5fold.py
+output=/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D
+return_code=1
+finish_time=2026-09-19 14:15:28 +0800

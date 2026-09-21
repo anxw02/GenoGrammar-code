@@ -1,0 +1,15 @@
+Evidence_block,Analysis,Metric,Estimate,CI_low,CI_high,Interpretation
+Matched pair-aware benchmark,GenoGramma all-pairs,ROC_AUC,0.8609137917974027,,,Highest point estimate among matched pair-aware models
+Matched pair-aware benchmark,GenoGramma all-pairs,PR_AUC,0.8039284652533033,,,Highest point estimate among matched pair-aware models
+Strand shortcut control,GenoGramma same-strand-only,ROC_AUC,0.7522897291223832,,,Performance retained after removal of opposite-strand easy negatives
+Strand shortcut control,GenoGramma same-strand-only,PR_AUC,0.8039642807598499,,,Performance retained after removal of opposite-strand easy negatives
+Effective-N robustness,Same-strand ANI95 lineage macro,ROC_AUC,0.7509813106224882,0.7368252277698532,0.7645221286285625,54 ANI95 lineages treated as biological units
+Effective-N robustness,Same-strand ANI95 lineage macro,PR_AUC,0.8149601344614154,0.7987811244367373,0.829280176651938,54 ANI95 lineages treated as biological units
+Contextual-edge ablation,all_pairs: ContextualEdge_gain_over_pair,ROC_AUC,0.0031593007813834,0.0017602032280104,0.0046690410845572,Positive lineage-level contextual-edge increment
+Contextual-edge ablation,all_pairs: ContextualEdge_gain_over_pair,PR_AUC,0.0039605129644403,0.0016567580367649,0.0061747184052991,Positive lineage-level contextual-edge increment
+Contextual-edge ablation,all_pairs: ContextualEdge_gain_given_global,ROC_AUC,0.0042102408434321,0.0013968556177554,0.0076318916123025,Positive lineage-level contextual-edge increment
+Contextual-edge ablation,all_pairs: ContextualEdge_gain_given_global,PR_AUC,0.0050640528724856,0.001224564988769,0.0095260609252756,Positive lineage-level contextual-edge increment
+Contextual-edge ablation,same_strand_only: ContextualEdge_gain_over_pair,ROC_AUC,0.0058412724849477,0.0031813082179112,0.008608353514436,Positive lineage-level contextual-edge increment
+Contextual-edge ablation,same_strand_only: ContextualEdge_gain_over_pair,PR_AUC,0.003963134169903,0.001740666514774,0.0062793169837945,Positive lineage-level contextual-edge increment
+Contextual-edge ablation,same_strand_only: ContextualEdge_gain_given_global,ROC_AUC,0.0071486946016627,0.0022636762219104,0.0128667078080412,Positive lineage-level contextual-edge increment
+Contextual-edge ablation,same_strand_only: ContextualEdge_gain_given_global,PR_AUC,0.0050651677942881,0.0012139468247426,0.0096809672059126,Positive lineage-level contextual-edge increment

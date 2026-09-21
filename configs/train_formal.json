@@ -1,0 +1,29 @@
+{
+  "model_name": "GenoGramma",
+  "architecture": "ExplicitNeighborhoodEncoder",
+  "window_len": 64,
+  "family_embedding_dim": 480,
+  "model_dim": 128,
+  "trainable_parameters": 508187,
+  "folds": [1, 2, 3, 4, 5],
+  "fold_seeds": {
+    "1": 42,
+    "2": 142,
+    "3": 242,
+    "4": 342,
+    "5": 442
+  },
+  "epochs": 5,
+  "steps_per_epoch": 400,
+  "batch_size": 48,
+  "validation_batches": 30,
+  "outer_batches": 40,
+  "learning_rate": 0.0003,
+  "lineage_blocking": "ANI95",
+  "phenotype_labels_used_in_pretraining": false,
+  "outer_holdout_used_for_training": false,
+  "outer_holdout_used_for_early_stopping": false,
+  "outer_holdout_used_for_model_selection": false,
+  "family_embedding_file": "model_assets/family_embeddings/00_family_embeddings_276517x480.npy",
+  "family_index_file": "model_assets/family_embeddings/02_family_representative_index.csv"
+}

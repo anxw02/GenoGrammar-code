@@ -1,0 +1,31 @@
+{
+  "status": "FAIL",
+  "stage": "Stage08A",
+  "timestamp": "2026-09-15T09:22:36.139362",
+  "best_epoch": 2,
+  "inner_train_genomes": 665,
+  "inner_val_genomes": 105,
+  "outer_test_genomes": 195,
+  "outer_metrics": {
+    "loss": 2.870022741953532,
+    "shuffle_accuracy": 0.3333333333333333,
+    "rank_fraction_global_gt_local": 0.26979166666666665,
+    "local_displacement_mean": 1.862645149230957e-08,
+    "global_displacement_mean": 3.0857821305592854e-08,
+    "relative_position_accuracy": 0.07604166666666666,
+    "adjacency_accuracy": 0.49270833333333336
+  },
+  "global_minus_local": 1.2231369813283284e-08,
+  "criteria": {
+    "shuffle_accuracy_pass": false,
+    "rank_fraction_pass": false,
+    "global_minus_local_pass": false,
+    "relative_position_pass": false,
+    "adjacency_pass": false
+  },
+  "all_acceptance_criteria_pass": false,
+  "phenotype_labels_used": false,
+  "outer_holdout_used_for_training": false,
+  "outer_holdout_used_for_early_stopping": false,
+  "next_step": "Do NOT start Stage08B; revise explicit order objective."
+}

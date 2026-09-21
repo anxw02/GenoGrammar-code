@@ -1,0 +1,40 @@
+{
+  "stage": "Stage09",
+  "timestamp": "2026-09-15T10:10:56.771584",
+  "purpose": "Order-invariant gene-content negative-control baseline.",
+  "n_genomes": 965,
+  "controls": [
+    "TIGHTBLOCK50",
+    "LOCAL_W10",
+    "GLOBAL_CONTIG"
+  ],
+  "seeds": [
+    42,
+    142,
+    242,
+    342,
+    442
+  ],
+  "representation": "Count-weighted mean of frozen ESM-2 protein-family embeddings.",
+  "input_information": [
+    "protein_family_identity",
+    "protein_family_copy_number"
+  ],
+  "explicitly_excluded_information": [
+    "gene_order",
+    "gene_position",
+    "contig_order",
+    "adjacency",
+    "strand",
+    "relative_position"
+  ],
+  "trainable_parameters": 0,
+  "phenotype_labels_used": false,
+  "expected_result": "TRUE \u2248 TIGHTBLOCK50 \u2248 LOCAL_W10 \u2248 GLOBAL_CONTIG",
+  "acceptance": {
+    "exact_family_multiset_match_fraction": 1.0,
+    "median_displacement_max": 1e-10,
+    "maximum_displacement_max": 1e-08
+  },
+  "scientific_interpretation": "If content-only representations remain invariant while Stage08B2 explicit-order representations show graded displacement, the Stage08B2 response cannot be attributed to changes in protein-family composition."
+}

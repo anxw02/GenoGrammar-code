@@ -1,0 +1,1363 @@
+{
+  "architecture": "ExplicitNeighborhoodEncoder",
+  "publication_name": "GenoGrammar",
+  "expected_input_family_dim": 480,
+  "model_dim": 128,
+  "formal_checkpoint_groups": {
+    "Stage08B1": [
+      {
+        "checkpoint": "<HISTORICAL_ROOT>/paper_code/checkpoints/stage08B1/fold_1_best_checkpoint.pt",
+        "n_tensors": 37,
+        "n_parameters": 508182,
+        "parameter_shapes": {
+          "family_proj.0.weight": [
+            128,
+            480
+          ],
+          "family_proj.0.bias": [
+            128
+          ],
+          "family_proj.1.weight": [
+            128
+          ],
+          "family_proj.1.bias": [
+            128
+          ],
+          "strand_emb.weight": [
+            2,
+            8
+          ],
+          "token_fuse.0.weight": [
+            128,
+            136
+          ],
+          "token_fuse.0.bias": [
+            128
+          ],
+          "token_fuse.1.weight": [
+            128
+          ],
+          "token_fuse.1.bias": [
+            128
+          ],
+          "edge_mlp.0.weight": [
+            256,
+            512
+          ],
+          "edge_mlp.0.bias": [
+            256
+          ],
+          "edge_mlp.2.weight": [
+            128,
+            256
+          ],
+          "edge_mlp.2.bias": [
+            128
+          ],
+          "edge_mlp.3.weight": [
+            128
+          ],
+          "edge_mlp.3.bias": [
+            128
+          ],
+          "edge_conv1.weight": [
+            128,
+            128,
+            3
+          ],
+          "edge_conv1.bias": [
+            128
+          ],
+          "edge_conv2.weight": [
+            128,
+            128,
+            5
+          ],
+          "edge_conv2.bias": [
+            128
+          ],
+          "edge_norm.weight": [
+            128
+          ],
+          "edge_norm.bias": [
+            128
+          ],
+          "edge_gate.weight": [
+            1,
+            128
+          ],
+          "edge_gate.bias": [
+            1
+          ],
+          "out_proj.0.weight": [
+            128,
+            128
+          ],
+          "out_proj.0.bias": [
+            128
+          ],
+          "out_proj.1.weight": [
+            128
+          ],
+          "out_proj.1.bias": [
+            128
+          ],
+          "shuffle_head.0.weight": [
+            128,
+            128
+          ],
+          "shuffle_head.0.bias": [
+            128
+          ],
+          "shuffle_head.2.weight": [
+            3,
+            128
+          ],
+          "shuffle_head.2.bias": [
+            3
+          ],
+          "adj_head.0.weight": [
+            128,
+            512
+          ],
+          "adj_head.0.bias": [
+            128
+          ],
+          "adj_head.2.weight": [
+            2,
+            128
+          ],
+          "adj_head.2.bias": [
+            2
+          ],
+          "query_proj.weight": [
+            128,
+            128
+          ],
+          "key_proj.weight": [
+            128,
+            128
+          ]
+        }
+      },
+      {
+        "checkpoint": "<HISTORICAL_ROOT>/paper_code/checkpoints/stage08B1/fold_2_best_checkpoint.pt",
+        "n_tensors": 37,
+        "n_parameters": 508182,
+        "parameter_shapes": {
+          "family_proj.0.weight": [
+            128,
+            480
+          ],
+          "family_proj.0.bias": [
+            128
+          ],
+          "family_proj.1.weight": [
+            128
+          ],
+          "family_proj.1.bias": [
+            128
+          ],
+          "strand_emb.weight": [
+            2,
+            8
+          ],
+          "token_fuse.0.weight": [
+            128,
+            136
+          ],
+          "token_fuse.0.bias": [
+            128
+          ],
+          "token_fuse.1.weight": [
+            128
+          ],
+          "token_fuse.1.bias": [
+            128
+          ],
+          "edge_mlp.0.weight": [
+            256,
+            512
+          ],
+          "edge_mlp.0.bias": [
+            256
+          ],
+          "edge_mlp.2.weight": [
+            128,
+            256
+          ],
+          "edge_mlp.2.bias": [
+            128
+          ],
+          "edge_mlp.3.weight": [
+            128
+          ],
+          "edge_mlp.3.bias": [
+            128
+          ],
+          "edge_conv1.weight": [
+            128,
+            128,
+            3
+          ],
+          "edge_conv1.bias": [
+            128
+          ],
+          "edge_conv2.weight": [
+            128,
+            128,
+            5
+          ],
+          "edge_conv2.bias": [
+            128
+          ],
+          "edge_norm.weight": [
+            128
+          ],
+          "edge_norm.bias": [
+            128
+          ],
+          "edge_gate.weight": [
+            1,
+            128
+          ],
+          "edge_gate.bias": [
+            1
+          ],
+          "out_proj.0.weight": [
+            128,
+            128
+          ],
+          "out_proj.0.bias": [
+            128
+          ],
+          "out_proj.1.weight": [
+            128
+          ],
+          "out_proj.1.bias": [
+            128
+          ],
+          "shuffle_head.0.weight": [
+            128,
+            128
+          ],
+          "shuffle_head.0.bias": [
+            128
+          ],
+          "shuffle_head.2.weight": [
+            3,
+            128
+          ],
+          "shuffle_head.2.bias": [
+            3
+          ],
+          "adj_head.0.weight": [
+            128,
+            512
+          ],
+          "adj_head.0.bias": [
+            128
+          ],
+          "adj_head.2.weight": [
+            2,
+            128
+          ],
+          "adj_head.2.bias": [
+            2
+          ],
+          "query_proj.weight": [
+            128,
+            128
+          ],
+          "key_proj.weight": [
+            128,
+            128
+          ]
+        }
+      },
+      {
+        "checkpoint": "<HISTORICAL_ROOT>/paper_code/checkpoints/stage08B1/fold_3_best_checkpoint.pt",
+        "n_tensors": 37,
+        "n_parameters": 508182,
+        "parameter_shapes": {
+          "family_proj.0.weight": [
+            128,
+            480
+          ],
+          "family_proj.0.bias": [
+            128
+          ],
+          "family_proj.1.weight": [
+            128
+          ],
+          "family_proj.1.bias": [
+            128
+          ],
+          "strand_emb.weight": [
+            2,
+            8
+          ],
+          "token_fuse.0.weight": [
+            128,
+            136
+          ],
+          "token_fuse.0.bias": [
+            128
+          ],
+          "token_fuse.1.weight": [
+            128
+          ],
+          "token_fuse.1.bias": [
+            128
+          ],
+          "edge_mlp.0.weight": [
+            256,
+            512
+          ],
+          "edge_mlp.0.bias": [
+            256
+          ],
+          "edge_mlp.2.weight": [
+            128,
+            256
+          ],
+          "edge_mlp.2.bias": [
+            128
+          ],
+          "edge_mlp.3.weight": [
+            128
+          ],
+          "edge_mlp.3.bias": [
+            128
+          ],
+          "edge_conv1.weight": [
+            128,
+            128,
+            3
+          ],
+          "edge_conv1.bias": [
+            128
+          ],
+          "edge_conv2.weight": [
+            128,
+            128,
+            5
+          ],
+          "edge_conv2.bias": [
+            128
+          ],
+          "edge_norm.weight": [
+            128
+          ],
+          "edge_norm.bias": [
+            128
+          ],
+          "edge_gate.weight": [
+            1,
+            128
+          ],
+          "edge_gate.bias": [
+            1
+          ],
+          "out_proj.0.weight": [
+            128,
+            128
+          ],
+          "out_proj.0.bias": [
+            128
+          ],
+          "out_proj.1.weight": [
+            128
+          ],
+          "out_proj.1.bias": [
+            128
+          ],
+          "shuffle_head.0.weight": [
+            128,
+            128
+          ],
+          "shuffle_head.0.bias": [
+            128
+          ],
+          "shuffle_head.2.weight": [
+            3,
+            128
+          ],
+          "shuffle_head.2.bias": [
+            3
+          ],
+          "adj_head.0.weight": [
+            128,
+            512
+          ],
+          "adj_head.0.bias": [
+            128
+          ],
+          "adj_head.2.weight": [
+            2,
+            128
+          ],
+          "adj_head.2.bias": [
+            2
+          ],
+          "query_proj.weight": [
+            128,
+            128
+          ],
+          "key_proj.weight": [
+            128,
+            128
+          ]
+        }
+      },
+      {
+        "checkpoint": "<HISTORICAL_ROOT>/paper_code/checkpoints/stage08B1/fold_4_best_checkpoint.pt",
+        "n_tensors": 37,
+        "n_parameters": 508182,
+        "parameter_shapes": {
+          "family_proj.0.weight": [
+            128,
+            480
+          ],
+          "family_proj.0.bias": [
+            128
+          ],
+          "family_proj.1.weight": [
+            128
+          ],
+          "family_proj.1.bias": [
+            128
+          ],
+          "strand_emb.weight": [
+            2,
+            8
+          ],
+          "token_fuse.0.weight": [
+            128,
+            136
+          ],
+          "token_fuse.0.bias": [
+            128
+          ],
+          "token_fuse.1.weight": [
+            128
+          ],
+          "token_fuse.1.bias": [
+            128
+          ],
+          "edge_mlp.0.weight": [
+            256,
+            512
+          ],
+          "edge_mlp.0.bias": [
+            256
+          ],
+          "edge_mlp.2.weight": [
+            128,
+            256
+          ],
+          "edge_mlp.2.bias": [
+            128
+          ],
+          "edge_mlp.3.weight": [
+            128
+          ],
+          "edge_mlp.3.bias": [
+            128
+          ],
+          "edge_conv1.weight": [
+            128,
+            128,
+            3
+          ],
+          "edge_conv1.bias": [
+            128
+          ],
+          "edge_conv2.weight": [
+            128,
+            128,
+            5
+          ],
+          "edge_conv2.bias": [
+            128
+          ],
+          "edge_norm.weight": [
+            128
+          ],
+          "edge_norm.bias": [
+            128
+          ],
+          "edge_gate.weight": [
+            1,
+            128
+          ],
+          "edge_gate.bias": [
+            1
+          ],
+          "out_proj.0.weight": [
+            128,
+            128
+          ],
+          "out_proj.0.bias": [
+            128
+          ],
+          "out_proj.1.weight": [
+            128
+          ],
+          "out_proj.1.bias": [
+            128
+          ],
+          "shuffle_head.0.weight": [
+            128,
+            128
+          ],
+          "shuffle_head.0.bias": [
+            128
+          ],
+          "shuffle_head.2.weight": [
+            3,
+            128
+          ],
+          "shuffle_head.2.bias": [
+            3
+          ],
+          "adj_head.0.weight": [
+            128,
+            512
+          ],
+          "adj_head.0.bias": [
+            128
+          ],
+          "adj_head.2.weight": [
+            2,
+            128
+          ],
+          "adj_head.2.bias": [
+            2
+          ],
+          "query_proj.weight": [
+            128,
+            128
+          ],
+          "key_proj.weight": [
+            128,
+            128
+          ]
+        }
+      },
+      {
+        "checkpoint": "<HISTORICAL_ROOT>/paper_code/checkpoints/stage08B1/fold_5_best_checkpoint.pt",
+        "n_tensors": 37,
+        "n_parameters": 508182,
+        "parameter_shapes": {
+          "family_proj.0.weight": [
+            128,
+            480
+          ],
+          "family_proj.0.bias": [
+            128
+          ],
+          "family_proj.1.weight": [
+            128
+          ],
+          "family_proj.1.bias": [
+            128
+          ],
+          "strand_emb.weight": [
+            2,
+            8
+          ],
+          "token_fuse.0.weight": [
+            128,
+            136
+          ],
+          "token_fuse.0.bias": [
+            128
+          ],
+          "token_fuse.1.weight": [
+            128
+          ],
+          "token_fuse.1.bias": [
+            128
+          ],
+          "edge_mlp.0.weight": [
+            256,
+            512
+          ],
+          "edge_mlp.0.bias": [
+            256
+          ],
+          "edge_mlp.2.weight": [
+            128,
+            256
+          ],
+          "edge_mlp.2.bias": [
+            128
+          ],
+          "edge_mlp.3.weight": [
+            128
+          ],
+          "edge_mlp.3.bias": [
+            128
+          ],
+          "edge_conv1.weight": [
+            128,
+            128,
+            3
+          ],
+          "edge_conv1.bias": [
+            128
+          ],
+          "edge_conv2.weight": [
+            128,
+            128,
+            5
+          ],
+          "edge_conv2.bias": [
+            128
+          ],
+          "edge_norm.weight": [
+            128
+          ],
+          "edge_norm.bias": [
+            128
+          ],
+          "edge_gate.weight": [
+            1,
+            128
+          ],
+          "edge_gate.bias": [
+            1
+          ],
+          "out_proj.0.weight": [
+            128,
+            128
+          ],
+          "out_proj.0.bias": [
+            128
+          ],
+          "out_proj.1.weight": [
+            128
+          ],
+          "out_proj.1.bias": [
+            128
+          ],
+          "shuffle_head.0.weight": [
+            128,
+            128
+          ],
+          "shuffle_head.0.bias": [
+            128
+          ],
+          "shuffle_head.2.weight": [
+            3,
+            128
+          ],
+          "shuffle_head.2.bias": [
+            3
+          ],
+          "adj_head.0.weight": [
+            128,
+            512
+          ],
+          "adj_head.0.bias": [
+            128
+          ],
+          "adj_head.2.weight": [
+            2,
+            128
+          ],
+          "adj_head.2.bias": [
+            2
+          ],
+          "query_proj.weight": [
+            128,
+            128
+          ],
+          "key_proj.weight": [
+            128,
+            128
+          ]
+        }
+      }
+    ],
+    "Stage10A": [
+      {
+        "checkpoint": "<HISTORICAL_ROOT>/paper_code/checkpoints/stage10A/fold_1_best_checkpoint.pt",
+        "n_tensors": 37,
+        "n_parameters": 508182,
+        "parameter_shapes": {
+          "family_proj.0.weight": [
+            128,
+            480
+          ],
+          "family_proj.0.bias": [
+            128
+          ],
+          "family_proj.1.weight": [
+            128
+          ],
+          "family_proj.1.bias": [
+            128
+          ],
+          "strand_emb.weight": [
+            2,
+            8
+          ],
+          "token_fuse.0.weight": [
+            128,
+            136
+          ],
+          "token_fuse.0.bias": [
+            128
+          ],
+          "token_fuse.1.weight": [
+            128
+          ],
+          "token_fuse.1.bias": [
+            128
+          ],
+          "edge_mlp.0.weight": [
+            256,
+            512
+          ],
+          "edge_mlp.0.bias": [
+            256
+          ],
+          "edge_mlp.2.weight": [
+            128,
+            256
+          ],
+          "edge_mlp.2.bias": [
+            128
+          ],
+          "edge_mlp.3.weight": [
+            128
+          ],
+          "edge_mlp.3.bias": [
+            128
+          ],
+          "edge_conv1.weight": [
+            128,
+            128,
+            3
+          ],
+          "edge_conv1.bias": [
+            128
+          ],
+          "edge_conv2.weight": [
+            128,
+            128,
+            5
+          ],
+          "edge_conv2.bias": [
+            128
+          ],
+          "edge_norm.weight": [
+            128
+          ],
+          "edge_norm.bias": [
+            128
+          ],
+          "edge_gate.weight": [
+            1,
+            128
+          ],
+          "edge_gate.bias": [
+            1
+          ],
+          "out_proj.0.weight": [
+            128,
+            128
+          ],
+          "out_proj.0.bias": [
+            128
+          ],
+          "out_proj.1.weight": [
+            128
+          ],
+          "out_proj.1.bias": [
+            128
+          ],
+          "shuffle_head.0.weight": [
+            128,
+            128
+          ],
+          "shuffle_head.0.bias": [
+            128
+          ],
+          "shuffle_head.2.weight": [
+            3,
+            128
+          ],
+          "shuffle_head.2.bias": [
+            3
+          ],
+          "adj_head.0.weight": [
+            128,
+            512
+          ],
+          "adj_head.0.bias": [
+            128
+          ],
+          "adj_head.2.weight": [
+            2,
+            128
+          ],
+          "adj_head.2.bias": [
+            2
+          ],
+          "query_proj.weight": [
+            128,
+            128
+          ],
+          "key_proj.weight": [
+            128,
+            128
+          ]
+        }
+      },
+      {
+        "checkpoint": "<HISTORICAL_ROOT>/paper_code/checkpoints/stage10A/fold_2_best_checkpoint.pt",
+        "n_tensors": 37,
+        "n_parameters": 508182,
+        "parameter_shapes": {
+          "family_proj.0.weight": [
+            128,
+            480
+          ],
+          "family_proj.0.bias": [
+            128
+          ],
+          "family_proj.1.weight": [
+            128
+          ],
+          "family_proj.1.bias": [
+            128
+          ],
+          "strand_emb.weight": [
+            2,
+            8
+          ],
+          "token_fuse.0.weight": [
+            128,
+            136
+          ],
+          "token_fuse.0.bias": [
+            128
+          ],
+          "token_fuse.1.weight": [
+            128
+          ],
+          "token_fuse.1.bias": [
+            128
+          ],
+          "edge_mlp.0.weight": [
+            256,
+            512
+          ],
+          "edge_mlp.0.bias": [
+            256
+          ],
+          "edge_mlp.2.weight": [
+            128,
+            256
+          ],
+          "edge_mlp.2.bias": [
+            128
+          ],
+          "edge_mlp.3.weight": [
+            128
+          ],
+          "edge_mlp.3.bias": [
+            128
+          ],
+          "edge_conv1.weight": [
+            128,
+            128,
+            3
+          ],
+          "edge_conv1.bias": [
+            128
+          ],
+          "edge_conv2.weight": [
+            128,
+            128,
+            5
+          ],
+          "edge_conv2.bias": [
+            128
+          ],
+          "edge_norm.weight": [
+            128
+          ],
+          "edge_norm.bias": [
+            128
+          ],
+          "edge_gate.weight": [
+            1,
+            128
+          ],
+          "edge_gate.bias": [
+            1
+          ],
+          "out_proj.0.weight": [
+            128,
+            128
+          ],
+          "out_proj.0.bias": [
+            128
+          ],
+          "out_proj.1.weight": [
+            128
+          ],
+          "out_proj.1.bias": [
+            128
+          ],
+          "shuffle_head.0.weight": [
+            128,
+            128
+          ],
+          "shuffle_head.0.bias": [
+            128
+          ],
+          "shuffle_head.2.weight": [
+            3,
+            128
+          ],
+          "shuffle_head.2.bias": [
+            3
+          ],
+          "adj_head.0.weight": [
+            128,
+            512
+          ],
+          "adj_head.0.bias": [
+            128
+          ],
+          "adj_head.2.weight": [
+            2,
+            128
+          ],
+          "adj_head.2.bias": [
+            2
+          ],
+          "query_proj.weight": [
+            128,
+            128
+          ],
+          "key_proj.weight": [
+            128,
+            128
+          ]
+        }
+      },
+      {
+        "checkpoint": "<HISTORICAL_ROOT>/paper_code/checkpoints/stage10A/fold_3_best_checkpoint.pt",
+        "n_tensors": 37,
+        "n_parameters": 508182,
+        "parameter_shapes": {
+          "family_proj.0.weight": [
+            128,
+            480
+          ],
+          "family_proj.0.bias": [
+            128
+          ],
+          "family_proj.1.weight": [
+            128
+          ],
+          "family_proj.1.bias": [
+            128
+          ],
+          "strand_emb.weight": [
+            2,
+            8
+          ],
+          "token_fuse.0.weight": [
+            128,
+            136
+          ],
+          "token_fuse.0.bias": [
+            128
+          ],
+          "token_fuse.1.weight": [
+            128
+          ],
+          "token_fuse.1.bias": [
+            128
+          ],
+          "edge_mlp.0.weight": [
+            256,
+            512
+          ],
+          "edge_mlp.0.bias": [
+            256
+          ],
+          "edge_mlp.2.weight": [
+            128,
+            256
+          ],
+          "edge_mlp.2.bias": [
+            128
+          ],
+          "edge_mlp.3.weight": [
+            128
+          ],
+          "edge_mlp.3.bias": [
+            128
+          ],
+          "edge_conv1.weight": [
+            128,
+            128,
+            3
+          ],
+          "edge_conv1.bias": [
+            128
+          ],
+          "edge_conv2.weight": [
+            128,
+            128,
+            5
+          ],
+          "edge_conv2.bias": [
+            128
+          ],
+          "edge_norm.weight": [
+            128
+          ],
+          "edge_norm.bias": [
+            128
+          ],
+          "edge_gate.weight": [
+            1,
+            128
+          ],
+          "edge_gate.bias": [
+            1
+          ],
+          "out_proj.0.weight": [
+            128,
+            128
+          ],
+          "out_proj.0.bias": [
+            128
+          ],
+          "out_proj.1.weight": [
+            128
+          ],
+          "out_proj.1.bias": [
+            128
+          ],
+          "shuffle_head.0.weight": [
+            128,
+            128
+          ],
+          "shuffle_head.0.bias": [
+            128
+          ],
+          "shuffle_head.2.weight": [
+            3,
+            128
+          ],
+          "shuffle_head.2.bias": [
+            3
+          ],
+          "adj_head.0.weight": [
+            128,
+            512
+          ],
+          "adj_head.0.bias": [
+            128
+          ],
+          "adj_head.2.weight": [
+            2,
+            128
+          ],
+          "adj_head.2.bias": [
+            2
+          ],
+          "query_proj.weight": [
+            128,
+            128
+          ],
+          "key_proj.weight": [
+            128,
+            128
+          ]
+        }
+      },
+      {
+        "checkpoint": "<HISTORICAL_ROOT>/paper_code/checkpoints/stage10A/fold_4_best_checkpoint.pt",
+        "n_tensors": 37,
+        "n_parameters": 508182,
+        "parameter_shapes": {
+          "family_proj.0.weight": [
+            128,
+            480
+          ],
+          "family_proj.0.bias": [
+            128
+          ],
+          "family_proj.1.weight": [
+            128
+          ],
+          "family_proj.1.bias": [
+            128
+          ],
+          "strand_emb.weight": [
+            2,
+            8
+          ],
+          "token_fuse.0.weight": [
+            128,
+            136
+          ],
+          "token_fuse.0.bias": [
+            128
+          ],
+          "token_fuse.1.weight": [
+            128
+          ],
+          "token_fuse.1.bias": [
+            128
+          ],
+          "edge_mlp.0.weight": [
+            256,
+            512
+          ],
+          "edge_mlp.0.bias": [
+            256
+          ],
+          "edge_mlp.2.weight": [
+            128,
+            256
+          ],
+          "edge_mlp.2.bias": [
+            128
+          ],
+          "edge_mlp.3.weight": [
+            128
+          ],
+          "edge_mlp.3.bias": [
+            128
+          ],
+          "edge_conv1.weight": [
+            128,
+            128,
+            3
+          ],
+          "edge_conv1.bias": [
+            128
+          ],
+          "edge_conv2.weight": [
+            128,
+            128,
+            5
+          ],
+          "edge_conv2.bias": [
+            128
+          ],
+          "edge_norm.weight": [
+            128
+          ],
+          "edge_norm.bias": [
+            128
+          ],
+          "edge_gate.weight": [
+            1,
+            128
+          ],
+          "edge_gate.bias": [
+            1
+          ],
+          "out_proj.0.weight": [
+            128,
+            128
+          ],
+          "out_proj.0.bias": [
+            128
+          ],
+          "out_proj.1.weight": [
+            128
+          ],
+          "out_proj.1.bias": [
+            128
+          ],
+          "shuffle_head.0.weight": [
+            128,
+            128
+          ],
+          "shuffle_head.0.bias": [
+            128
+          ],
+          "shuffle_head.2.weight": [
+            3,
+            128
+          ],
+          "shuffle_head.2.bias": [
+            3
+          ],
+          "adj_head.0.weight": [
+            128,
+            512
+          ],
+          "adj_head.0.bias": [
+            128
+          ],
+          "adj_head.2.weight": [
+            2,
+            128
+          ],
+          "adj_head.2.bias": [
+            2
+          ],
+          "query_proj.weight": [
+            128,
+            128
+          ],
+          "key_proj.weight": [
+            128,
+            128
+          ]
+        }
+      },
+      {
+        "checkpoint": "<HISTORICAL_ROOT>/paper_code/checkpoints/stage10A/fold_5_best_checkpoint.pt",
+        "n_tensors": 37,
+        "n_parameters": 508182,
+        "parameter_shapes": {
+          "family_proj.0.weight": [
+            128,
+            480
+          ],
+          "family_proj.0.bias": [
+            128
+          ],
+          "family_proj.1.weight": [
+            128
+          ],
+          "family_proj.1.bias": [
+            128
+          ],
+          "strand_emb.weight": [
+            2,
+            8
+          ],
+          "token_fuse.0.weight": [
+            128,
+            136
+          ],
+          "token_fuse.0.bias": [
+            128
+          ],
+          "token_fuse.1.weight": [
+            128
+          ],
+          "token_fuse.1.bias": [
+            128
+          ],
+          "edge_mlp.0.weight": [
+            256,
+            512
+          ],
+          "edge_mlp.0.bias": [
+            256
+          ],
+          "edge_mlp.2.weight": [
+            128,
+            256
+          ],
+          "edge_mlp.2.bias": [
+            128
+          ],
+          "edge_mlp.3.weight": [
+            128
+          ],
+          "edge_mlp.3.bias": [
+            128
+          ],
+          "edge_conv1.weight": [
+            128,
+            128,
+            3
+          ],
+          "edge_conv1.bias": [
+            128
+          ],
+          "edge_conv2.weight": [
+            128,
+            128,
+            5
+          ],
+          "edge_conv2.bias": [
+            128
+          ],
+          "edge_norm.weight": [
+            128
+          ],
+          "edge_norm.bias": [
+            128
+          ],
+          "edge_gate.weight": [
+            1,
+            128
+          ],
+          "edge_gate.bias": [
+            1
+          ],
+          "out_proj.0.weight": [
+            128,
+            128
+          ],
+          "out_proj.0.bias": [
+            128
+          ],
+          "out_proj.1.weight": [
+            128
+          ],
+          "out_proj.1.bias": [
+            128
+          ],
+          "shuffle_head.0.weight": [
+            128,
+            128
+          ],
+          "shuffle_head.0.bias": [
+            128
+          ],
+          "shuffle_head.2.weight": [
+            3,
+            128
+          ],
+          "shuffle_head.2.bias": [
+            3
+          ],
+          "adj_head.0.weight": [
+            128,
+            512
+          ],
+          "adj_head.0.bias": [
+            128
+          ],
+          "adj_head.2.weight": [
+            2,
+            128
+          ],
+          "adj_head.2.bias": [
+            2
+          ],
+          "query_proj.weight": [
+            128,
+            128
+          ],
+          "key_proj.weight": [
+            128,
+            128
+          ]
+        }
+      }
+    ]
+  },
+  "all_checkpoint_architectures_identical": true
+}

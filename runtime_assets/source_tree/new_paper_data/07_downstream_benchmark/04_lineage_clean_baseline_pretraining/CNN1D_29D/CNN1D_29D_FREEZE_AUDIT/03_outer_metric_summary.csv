@@ -1,0 +1,6 @@
+fold,seed,best_epoch,shuffle,rank,dL,dG,delta,adj,next
+1,42,5,,,,,,,
+2,142,4,,,,,,,
+3,242,4,,,,,,,
+4,342,5,,,,,,,
+5,442,5,,,,,,,

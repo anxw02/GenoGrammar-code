@@ -1,0 +1,555 @@
+﻿group_review_order,group_review_id,exact_audited_group_id,group_id_source,group_priority,group_priority_label,strain_entity_id,current_genome_key,primary_accession,species,strain,function_axis,endpoint,evidence_rows,positive_rows,negative_rows,null_rows,conflict_rows,unresolved_rows,authoritative_group_consensus,publication_ids,study_types,evidence_sections,suggested_group_direction,suggested_group_include,suggested_group_evidence_quality,manual_group_direction,manual_group_include,manual_group_evidence_quality,manual_group_function_axis,manual_group_endpoint,group_review_status,manual_group_notes,all_evidence_for_review,final_function_axis,final_endpoint,final_direction,final_include,final_evidence_quality,binary_label,binary_definition,registry_accession_candidates,accession_source_columns,identity_match_status,identity_match_method,matched_genome_path,matched_genome_file,matched_genome_accessions,matched_valid_fasta,matched_total_bp,matched_n50,matched_contigs,cohort,experiment_genome_ready,FINAL_nearclone_99_5_block,FINAL_lineage_95_block
+1,GREV511_012,GRP_AC889CE6A9,v5.3.review_group_id_v5_3,1,1_NEGATIVE_NULL_CONFLICT,STRAIN_000858,GCF_028475085.1,GCF_028475085.1,Lacticaseibacillus rhamnosus,GG,Adhesion,cell/mucin adhesion,15,9,0,1,0,5,Conflict,PUB_UNRESOLVED | PUBT_103dd70c2d520a94 | PUBT_1761a3d515e3b67f | PUBT_22c11416d4baaf50 | PUBT_23a8859a5f378485 | PUBT_d723a3ad22afe9f5,Unknown | In Vitro | Animal | Clinical,methods | results | discussion | intro,Conflict,Yes,Moderate,Positive,Yes,Moderate,,,REVIEWED,Direct strain-specific quantitative adhesion evidence for LGG supports adhesion. The apparent conflicting no-effect fragment concerns a different adherence context and does not overturn the strain adhesion phenotype.,"[E01] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Control | Section=methods | Confidence=NA
+Trigger: adhered
+Sentence: 20 random microscopic 114 fields of adhered lactobacilli were counted for eac h test.
+
+[E02] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: high adhesion
+Sentence: high adhesion ability except LGG showed signi ﬁcantly higher inhibition ability ag
+
+[E03] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: high adhesion
+Sentence: us GG. p. acidipropionici Q4 showed a high adhesion capacity, even higher than the reference strain L. rhamnosus GG (42.3±4.4% and 36.2±2.3%, respectively), whereas adhesion of enteropathogens was si
+
+[E04] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: High adhesion
+Sentence: High adhesion levels were observed for both p. acidipropionici Q4 and L. rhamnosus GG (42.3±4.4% and 36.2±2.3% respectively, P>0.05), whereas adhesion of enteropathogens
+
+[E05] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: strong adhesion
+Sentence: lm-formingprobiotic strains suggest that strong adhesion could lead to pathogens e
+
+[E06] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: high adhesion
+Sentence: The results were compared with those obtained with the well-known probiotic Lactobacillus rhamnosus GG. p. acidipropionici Q4 showed a high adhesion capacity, even higher than
+
+[E07] Direction=Unresolved | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: no effect
+Sentence: dies at doses of 0.3 or 3.0 pggjml, had no effect on the adherence of Strep. muta
+
+[E08] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=In Vitro | Role=Reference | Section=intro | Confidence=NA
+Trigger: adhered
+Sentence: L. fermentum LP2 adhered to caco-2 cells more than L. rhamnosus LGG where LP3, LP4 and LP5 adhered at similar level .
+
+[E09] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: adhered
+Sentence: Percentage of adhesion (bacteria adhered with respect to the amount of bacteria added) of Lactobacillus rhamnosus GG, Propionibacterium acidipropionici Q4 and enteropathogens Escherichia c
+
+[E10] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=In Vitro | Role=Unknown | Section=results | Confidence=NA
+Trigger: adhered
+Sentence: Accordingly, the LP2 strain adhered almost 2- fold to the caco-2 cells when compar
+
+[E11] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_103dd70c2d520a94 | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Sentence: Auto-Aggregation and Co-Aggregation AssayAuto-aggregation helps with adherenc
+
+[E12] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_1761a3d515e3b67f | Study=In Vitro | Role=Experimental | Section=results | Confidence=NA
+Sentence: Auto-Aggregation Ability, Hydrophobicity, Adhesion Ability
+
+[E13] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_22c11416d4baaf50 | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Sentence: The adhesion rates of strains LA15 and D17 were
+
+[E14] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_23a8859a5f378485 | Study=Animal | Role=Experimental | Section=results | Confidence=NA
+Sentence: model for testing effects of LGG on meningitic E. coli adhesion to and invasion of
+
+[E15] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_d723a3ad22afe9f5 | Study=Clinical | Role=Experimental | Section=results | Confidence=NA
+Sentence: Internalization of BL23 and LGG by Caco-2 and T84Gentamicin protection assays wer",Adhesion,cell/mucin adhesion,Positive,Yes,Moderate,1,PRIMARY: Positive=1; Negative+Null=0; Conflict excluded,GCF_028475085.1 | GCA_028475085.1,"GCF_028475085.1:current_genome_key,primary_accession,gcf_accession || GCA_028475085.1:gca_accession,local_genome_files",MATCHED,EXACT_VERSION,/root/autodl-tmp/axw/genomes/ncbi/GCA_028475085.1.fa.gz,GCA_028475085.1.fa.gz,GCA_028475085.1,True,3007263,3007263,1,PRIMARY,True,NC_0015,ANI95_0003
+3,GREV511_010,GRP_5C834FE15E,v5.3.review_group_id_v5_3,1,1_NEGATIVE_NULL_CONFLICT,STRAIN_000565,GCF_003175115.1,GCF_003175115.1,Limosilactobacillus reuteri,LR6,Metabolic,cholesterol,1,0,0,1,0,0,Null,PUB_UNRESOLVED,Unknown,abstract,Null,Yes,Moderate,Positive,Yes,Moderate,,,REVIEWED,"The LR6-treated group showed significant reductions in total cholesterol, triglycerides and LDL; only HDL was non-significant. Overall cholesterol-related effect is favorable.","[E01] Direction=Unresolved | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Experimental | Section=abstract | Confidence=NA
+Trigger: not significant
+Sentence: for total cholesterol (TC), triglyceride (TG), and LDL werereduced significantly in group fed with L. reuteri LR6 but for HDL this difference was not significant.",Metabolic,cholesterol,Positive,Yes,Moderate,1,PRIMARY: Positive=1; Negative+Null=0; Conflict excluded,GCF_003175115.1 | GCA_003175115.1,"GCF_003175115.1:current_genome_key,primary_accession,gcf_accession || GCA_003175115.1:gca_accession,local_genome_files",MATCHED,EXACT_VERSION,/root/autodl-tmp/axw/genomes/ncbi/GCA_003175115.1.fa.gz,GCA_003175115.1.fa.gz,GCA_003175115.1,True,2139733,13546,379,PRIMARY,True,NC_0345,ANI95_0006
+7,GREV511_020,GRP_07947F6FEF,v5.3.review_group_id_v5_3,1,1_NEGATIVE_NULL_CONFLICT,STRAIN_000517,GCF_002794275.1,GCF_002794275.1,Limosilactobacillus fermentum,279,Unclassified,Unclassified,1,0,0,1,0,0,Null,PUB_UNRESOLVED,Unknown,discussion,Null,Yes,Moderate,Null,Yes,Moderate,Antioxidant,paraquat toxicity/oxidative-stress protection,REVIEWED,The evidence explicitly states that L. fermentum 279 did not reduce paraquat toxicity in C. elegans; this is a tested no-benefit result and is retained as Null.,"[E01] Direction=Unresolved | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: was not different
+Sentence: train which also possesses AO properties (Goyal et al. 2013), but it was not different from that of L. fermentum 279, which did not reduce the toxicity of PQ in C. elegans.",Antioxidant,paraquat toxicity/oxidative-stress protection,Null,Yes,Moderate,0,PRIMARY: Positive=1; Negative+Null=0; Conflict excluded,GCF_002794275.1 | GCA_002794275.1,"GCF_002794275.1:current_genome_key,primary_accession,gcf_accession || GCA_002794275.1:gca_accession,local_genome_files",MATCHED,EXACT_VERSION,/root/autodl-tmp/axw/genomes/ncbi/GCA_002794275.1.fa.gz,GCA_002794275.1.fa.gz,GCA_002794275.1,True,1983266,44731,108,PRIMARY,True,NC_0041,ANI95_0005
+10,GREV511_008,GRP_84E8FDA450,v5.3.review_group_id_v5_3,2,2_POSITIVE,STRAIN_000858,GCF_028475085.1,GCF_028475085.1,Lacticaseibacillus rhamnosus,GG,Antioxidant,antioxidant activity,6,4,0,0,0,2,Positive,PUBT_827370fc94d23528 | PUB_UNRESOLVED | PUBT_f6d2b7af61e9e0ee,Unknown | In Vitro,methods | unknown | results,Positive,Yes,Moderate,Positive,Yes,Moderate,,,REVIEWED,"Multiple strain-specific statements support LGG antioxidant activity, including significant antioxidant/superoxide-dismutase effects.","[E01] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_827370fc94d23528 | Study=Unknown | Role=Experimental | Section=methods | Confidence=NA
+Trigger: antioxidant activity
+Sentence: It has been suggested that the antioxidant activity of plant extra
+
+[E02] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=In Vitro | Role=Reference | Section=unknown | Confidence=NA
+Trigger: antioxidant activity
+Sentence: There is evi- dence that Lactobacillus rhamnosus GG (LGG) have antioxidant activity in vitro [ 3 ] .
+
+[E03] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: Antioxidant activity
+Sentence: Antioxidant activity and inhib
+
+[E04] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: antioxidant activity
+Sentence: eﬀ ects for human health and LGG has been shown to have antioxidant activity in v
+
+[E05] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_f6d2b7af61e9e0ee | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Sentence: f probiotics (Lactobacillus reuteri WHH1689, ●), Lactobacillus rhamnosus GG, ▲) stored at 45°C (a) and 50°C (b) over 30 daysOxidative stress refers to the essential balance in aerobic metabolism.
+
+[E06] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_f6d2b7af61e9e0ee | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Sentence: L. rhamnosus GG (LGG) proved to have significant effect on antioxidants and superoxide dismutase which was used as for contrast strain (Goyal, Rishi,",Antioxidant,antioxidant activity,Positive,Yes,Moderate,1,PRIMARY: Positive=1; Negative+Null=0; Conflict excluded,GCF_028475085.1 | GCA_028475085.1,"GCF_028475085.1:current_genome_key,primary_accession,gcf_accession || GCA_028475085.1:gca_accession,local_genome_files",MATCHED,EXACT_VERSION,/root/autodl-tmp/axw/genomes/ncbi/GCA_028475085.1.fa.gz,GCA_028475085.1.fa.gz,GCA_028475085.1,True,3007263,3007263,1,PRIMARY,True,NC_0015,ANI95_0003
+11,GREV511_014,GRP_84CE90407E,v5.3.review_group_id_v5_3,2,2_POSITIVE,STRAIN_000145,GCF_000025245.2,GCF_000025245.2,Bifidobacterium animalis subsp. lactis,BB-12,Immunomodulation,inflammation/cytokine response,2,2,0,0,0,0,Positive,PUBT_06bdb854e5f4ea20 | PUBT_b3838aa6803d7951,In Vitro | Clinical,discussion,Positive,Yes,Moderate,Positive,Yes,Moderate,,,REVIEWED,Stored literature evidence explicitly attributes anti-inflammatory properties to B. animalis Bb12/BB-12; retained as moderate-quality secondary evidence.,"[E01] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_06bdb854e5f4ea20 | Study=In Vitro | Role=Reference | Section=discussion | Confidence=NA
+Trigger: anti-inflammatory
+Sentence: ic strains such as Lactobacillus rhamnosus GG and Bifidobacterium animalis BB12, suggesting their prebiotic potential may be indirectly supported by their anti-inflammatory properties, which help crea
+
+[E02] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_b3838aa6803d7951 | Study=Clinical | Role=Reference | Section=discussion | Confidence=NA
+Trigger: anti-inflammatory
+Sentence: vious studies, administration of L. rhamnosus GG, B. animalis, and Lactis Bb12 in adult human clinical trials revealed anti-inflammatory properties (Kekkonen et al., 2008).",Immunomodulation,inflammation/cytokine response,Positive,Yes,Moderate,1,PRIMARY: Positive=1; Negative+Null=0; Conflict excluded,GCF_000025245.2 | GCA_000025245.2,"GCF_000025245.2:current_genome_key,primary_accession,gcf_accession || GCA_000025245.2:gca_accession,local_genome_files",MATCHED,EXACT_VERSION,/root/autodl-tmp/axw/genomes/ncbi/GCA_000025245.2.fa.gz,GCA_000025245.2.fa.gz,GCA_000025245.2,True,1944152,1944152,1,PRIMARY,True,NC_0004,ANI95_0011
+12,GREV511_003,GRP_42D2394E3B,v5.3.review_group_id_v5_3,2,2_POSITIVE,STRAIN_000858,GCF_028475085.1,GCF_028475085.1,Lacticaseibacillus rhamnosus,GG,Immunomodulation,inflammation/cytokine response,14,10,0,0,0,4,Positive,PUBT_59c989d6fc0cc18b | PUBT_a29502800b86096a | PUBT_b3838aa6803d7951 | PUBT_f1636c422c02a27b | PUB_UNRESOLVED | PUBT_89031761d4a79627 | PUBT_93acb88592af883e,Unknown | Clinical | In Vitro | Animal,results | discussion | intro | unknown,Positive,Yes,Moderate,Positive,Yes,Moderate,,,REVIEWED,"Multiple strain-specific statements support LGG immunomodulatory/anti-inflammatory activity across clinical, animal and in-vitro contexts.","[E01] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_59c989d6fc0cc18b | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Trigger: anti-inflammatory
+Sentence: Results suggested the anti-inflammatory effects of LP on the d
+
+[E02] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_a29502800b86096a | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: anti-inflammatory
+Sentence: R 17938 has been previously suggested to have anti-inflammatory effects.
+
+[E03] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_b3838aa6803d7951 | Study=Clinical | Role=Reference | Section=discussion | Confidence=NA
+Trigger: anti-inflammatory
+Sentence: In previous studies, administration of L. rhamnosus GG, B. animalis, and Lactis Bb12 in adult human clinical trials revealed anti-inflammatory properties (Kekkonen et al., 2008).
+
+[E04] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_f1636c422c02a27b | Study=Clinical | Role=Reference | Section=intro | Confidence=NA
+Trigger: anti-inflammatory
+Sentence: The Lactobacillus rhamnosus GG (LGG) strain, known for its anti-inflammatory [24] and antimicrobial activities in the respiratory tract [25,26], was used
+
+[E05] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=In Vitro | Role=Reference | Section=unknown | Confidence=NA
+Trigger: Anti-inflammatory
+Sentence: s GG 의 항염증 작용과 기전 이상길, 양경민, 천재희, 김태일, 김원호 연세대학교 의과대학 내과학교실, 소화기병 연구소 Anti-inflammatory Mechanism of Lactobacillus rhamnosus GG in Lipopolysaccharide- stimulated HT-29 Cell Sang Kil Lee, Kyung Min Ya
+
+[E06] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Animal | Role=Unknown | Section=results | Confidence=NA
+Trigger: anti-inflammatory
+Sentence: cillus reuteri could reduce visceral pain induced by colorectal distension,32and both live and dead Lactobacillus rhamnosus GG demonstrated anti-inflammatory e ﬀects in arthritis animal models.33Altho
+
+[E07] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: anti-inflammatory
+Sentence: sed the luciferase signal, suggesting the anti-inflammatory activity of K65 (Fig
+
+[E08] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: anti-inflammatory
+Sentence: oxide, antigiardial IgA and IgG antibodies and anti-inflammatory cytokines IL-6 a
+
+[E09] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: anti-inflammatory
+Sentence: ed by eHF + Lfand iPF + Lf, suggesting a potential anti-inflammatory mechanism in
+
+[E10] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=intro | Confidence=NA
+Trigger: anti-inflammatory
+Sentence: at removing environmental triggers and the use of anti-inflammatory suppressants
+
+[E11] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_89031761d4a79627 | Study=In Vitro | Role=Experimental | Section=results | Confidence=NA
+Sentence: us GR-1 and GG augmented NF-κB to different levelsLactobacillus rhamnosus GG, a well-studied immunomodulatory strain used for gastrointestinal disorders, was chosen to compare NF-κB augmenting abiliti
+
+[E12] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_89031761d4a79627 | Study=In Vitro | Role=Experimental | Section=results | Confidence=NA
+Sentence: ated by compound(s) released during the growth of L. rhamnosus GR-1.L. rhamnosus GR-1 and GG augmented NF-κB to different levelsLactobacillus rhamnosus GG, a well-studied immunomodulatory strain used
+
+[E13] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_93acb88592af883e | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Sentence: Typhimurium triggered a fulminant inflammatory response in the cecu
+
+[E14] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_b3838aa6803d7951 | Study=Animal | Role=Experimental | Section=results | Confidence=NA
+Sentence: ize (bp)TNF-αACGCTCTTCTGTCTACTGGGATGAACACGCCAGTCG5452.68212IL-10GAAGTGATGCCCCAGGCA",Immunomodulation,inflammation/cytokine response,Positive,Yes,Moderate,1,PRIMARY: Positive=1; Negative+Null=0; Conflict excluded,GCF_028475085.1 | GCA_028475085.1,"GCF_028475085.1:current_genome_key,primary_accession,gcf_accession || GCA_028475085.1:gca_accession,local_genome_files",MATCHED,EXACT_VERSION,/root/autodl-tmp/axw/genomes/ncbi/GCA_028475085.1.fa.gz,GCA_028475085.1.fa.gz,GCA_028475085.1,True,3007263,3007263,1,PRIMARY,True,NC_0015,ANI95_0003
+13,GREV511_009,GRP_53BE982903,v5.3.review_group_id_v5_3,2,2_POSITIVE,STRAIN_000858,GCF_028475085.1,GCF_028475085.1,Lacticaseibacillus rhamnosus,GG,Metabolic,glucose/insulin,10,7,0,0,0,3,Positive,PUB_UNRESOLVED | PUBT_127f497338d8b578 | PUBT_52e35c2e0f424f04 | PUBT_6f42d17424edd432,Animal | Unknown,abstract | intro | unknown | discussion | results,Positive,Yes,Moderate,Positive,Yes,Moderate,,,REVIEWED,Several strain-specific statements report LGG-enhanced insulin sensitivity and glucose tolerance.,"[E01] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Animal | Role=Experimental | Section=abstract | Confidence=NA
+Trigger: improved
+Sentence: L. rhamnosus NCDC 17 improved oral glucose tolerance test,
+
+[E02] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=intro | Confidence=NA
+Trigger: enhanced
+Sentence: tions 431 (2013) 258–263 261 LGG, on the enhanced insulin sensitivity without pote
+
+[E03] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=intro | Confidence=NA
+Trigger: enhanced
+Sentence: this study, we observed that LGG treatment enhanced insulin sensitivity with reduc
+
+[E04] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=unknown | Confidence=NA
+Trigger: improved insulin
+Sentence: actobacillus rhamnosus GG Insulin sensitivityAdiposityAdiponectinAMPKabstract Recently, a probiotic Lactobacillus rhamnosus GG (LGG) has shown several beneﬁcial effects, including improved insulin sen
+
+[E05] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=intro | Confidence=NA
+Trigger: enhanced
+Sentence: s [14,15] , we observed that LGG treatment enhanced glucose tolerance in HFD-fed m
+
+[E06] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=intro | Confidence=NA
+Trigger: enhanced
+Sentence: et al. [15] also found that LGG treat- ment enhanced insulin sensitivity in KK-Ay
+
+[E07] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: improved
+Sentence: Correlating with the effects on body weight, the L. rhamnosus NCDC 17 fed group improved glucose tolerance and fasting glucose as compared to the H
+
+[E08] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_127f497338d8b578 | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Sentence: This suggests that the configuration of the central glucose
+
+[E09] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_52e35c2e0f424f04 | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Sentence: FM, L. crispatus NCK1351, L. gasseri NCK1342, and L. rhamnosus GG grown in SDM with 0.5% glucose and no POM extract (green curve, No POM) or in SDM with 0.5% glucose and 400 μg/ml of POM extract (red
+
+[E10] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_6f42d17424edd432 | Study=Animal | Role=Experimental | Section=results | Confidence=NA
+Sentence: ly, glucose tolerance tests suggest a slightly better glucose tolerance in the KO",Metabolic,glucose/insulin,Positive,Yes,Moderate,1,PRIMARY: Positive=1; Negative+Null=0; Conflict excluded,GCF_028475085.1 | GCA_028475085.1,"GCF_028475085.1:current_genome_key,primary_accession,gcf_accession || GCA_028475085.1:gca_accession,local_genome_files",MATCHED,EXACT_VERSION,/root/autodl-tmp/axw/genomes/ncbi/GCA_028475085.1.fa.gz,GCA_028475085.1.fa.gz,GCA_028475085.1,True,3007263,3007263,1,PRIMARY,True,NC_0015,ANI95_0003
+14,GREV511_015,GRP_56F712EC62,v5.3.review_group_id_v5_3,2,2_POSITIVE,STRAIN_000858,GCF_028475085.1,GCF_028475085.1,Lacticaseibacillus rhamnosus,GG,Metabolic,obesity/body weight,4,3,0,0,0,1,Positive,PUB_UNRESOLVED | PUBT_2129a6e51115e3eb,Unknown | Animal,results | unknown | discussion,Positive,Yes,Moderate,Null,Yes,Moderate,,,REVIEWED,Direct animal-results evidence indicates no detected body-weight difference for zebrafish receiving LGG versus control; retained as Null.,"[E01] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: reduced body weight
+Sentence: rrent study, a high leve l of GGMs (0.3%) led to reduced body weight gain compare
+
+[E02] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=unknown | Confidence=NA
+Trigger: improved insulin
+Sentence: actobacillus rhamnosus GG Insulin sensitivityAdiposityAdiponectinAMPKabstract Recently, a probiotic Lactobacillus rhamnosus GG (LGG) has shown several beneﬁcial effects, including improved insulin sen
+
+[E03] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: improved
+Sentence: Correlating with the effects on body weight, the L. rhamnosus NCDC 17 fed group improved glucose tolerance and fasting glucose as compared to the H
+
+[E04] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_2129a6e51115e3eb | Study=Animal | Role=Experimental | Section=results | Confidence=NA
+Sentence: etected in the body weight of zebrafish receiving L. rhamnosus LGG, L. plantarum JCM 1149, or L. acidophilus JCM 1132 relative to control at both 21 dpf and 35 dpf (Figure 1).FIGURE 1Effects of potent",Metabolic,obesity/body weight,Null,Yes,Moderate,0,PRIMARY: Positive=1; Negative+Null=0; Conflict excluded,GCF_028475085.1 | GCA_028475085.1,"GCF_028475085.1:current_genome_key,primary_accession,gcf_accession || GCA_028475085.1:gca_accession,local_genome_files",MATCHED,EXACT_VERSION,/root/autodl-tmp/axw/genomes/ncbi/GCA_028475085.1.fa.gz,GCA_028475085.1.fa.gz,GCA_028475085.1,True,3007263,3007263,1,PRIMARY,True,NC_0015,ANI95_0003
+15,GREV511_016,GRP_EC331437B0,v5.3.review_group_id_v5_3,2,2_POSITIVE,STRAIN_000501,GCF_002286275.1,GCF_002286275.1,Lactiplantibacillus plantarum,LP3,Metabolic,obesity/body weight,1,1,0,0,0,0,Positive,PUB_UNRESOLVED,Unknown,discussion,Positive,Yes,Moderate,Positive,Yes,Moderate,,,REVIEWED,The stored evidence explicitly states that the LP3-treated group improved body-weight loss; secondary/discussion evidence supports a Positive label.,"[E01] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: improved
+Sentence: The LP3-treated group improved body weight loss and",Metabolic,obesity/body weight,Positive,Yes,Moderate,1,PRIMARY: Positive=1; Negative+Null=0; Conflict excluded,GCF_002286275.1 | GCA_002286275.1,"GCF_002286275.1:current_genome_key,primary_accession,gcf_accession || GCA_002286275.1:gca_accession,local_genome_files",MATCHED,EXACT_VERSION,/root/autodl-tmp/axw/genomes/ncbi/GCA_002286275.1.fa.gz,GCA_002286275.1.fa.gz,GCA_002286275.1,True,3329954,3259858,3,PRIMARY,True,NC_0059,ANI95_0001
+16,GREV511_004,GRP_9D3024C64C,v5.3.review_group_id_v5_3,2,2_POSITIVE,STRAIN_000858,GCF_028475085.1,GCF_028475085.1,Lacticaseibacillus rhamnosus,GG,Pathogen inhibition,pathogen inhibition,89,86,0,0,0,3,Positive,PUBT_29fd499ab5efb229 | PUBT_76631f1a2742cc1d | PUBT_87fc472e07f131a2 | PUB_UNRESOLVED | PUBT_6357aed0ba805618 | PUBT_6db307133ba9eb43 | PUBT_895272f60754e785 | PUBT_3323b215f477cba2 | PUBT_50cb9e43619ca8e1 | PUBT_8f91177d0d945587,Unknown | Animal | In Vitro,results | methods | intro | discussion | unknown | abstract,Positive,Yes,Moderate,Positive,Yes,Moderate,,,REVIEWED,Several direct strain-specific records clearly report LGG inhibition of pathogens/pathogen adhesion and antimicrobial activity.,"[E01] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_29fd499ab5efb229 | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: tion by Lactobacillus acidophilus supernatant and Lactobacillus rhamnosus GG supernatant dependent on lactate and acidityCell growth inhibition was measured by MTT assay.
+
+[E02] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_76631f1a2742cc1d | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: These results suggested that the inhibited cholesterol synthesis, el
+
+[E03] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_87fc472e07f131a2 | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: KCTC 3679 strains inhibited Aggregatibacter actinomycetemcomitans, F. nucleatum,
+
+[E04] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: ations up to 2000 µg ml-1, suggesting that CV8LAC BS inhibited pathogen adhesion
+
+[E05] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: eas E. coli inhibition could be ascribed mainly to proteinaceous factors (Table 1).
+
+[E06] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_6357aed0ba805618 | Study=Animal | Role=Experimental | Section=methods | Confidence=NA
+Trigger: inhibition
+Sentence: The hemagglutination inhibition assay was used to titrate th
+
+[E07] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Experimental | Section=methods | Confidence=NA
+Trigger: inhibition
+Sentence: thogen inhibition have been suggested; for example, some metabolic products fromla
+
+[E08] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_6db307133ba9eb43 | Study=Unknown | Role=Reference | Section=intro | Confidence=NA
+Trigger: inhibition
+Sentence: S. mutans [15,16,17], the coaggregation and competitive inhibition of adherence t
+
+[E09] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_87fc472e07f131a2 | Study=Unknown | Role=Reference | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: L. rhamnosus CT-53 inhibited F. nu
+
+[E10] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUBT_895272f60754e785 | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibition
+Sentence: wed that the probiotics Bifidobacterium breve and Lactobacillus rhamnosus GG inhibit LPS-induced expression of IL-23 in intestinal cells cultured in a condition of histone acetylation inhibition and i
+
+[E11] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibition
+Sentence: dhesion to epithelial cells, aggregation, and inhibition of pathogens were some of
+
+[E12] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: Inhibition
+Sentence: Inhibition of adhesion of E. coli and Salmonella species by L. rhamnosus GG on mucus and intestinal cells was reported previously (Lee et al., 2003).
+
+[E13] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: in treated resistant cells suggests that this CFE inhibited these energy depende
+
+[E14] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: Inhibition
+Sentence: CIj Competitive Inhibition
+
+[E15] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=In Vitro | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: Enteritidis was higher inhibited by L. rhamnosus GG than p. acidipropionici Q4.
+
+[E16] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: eas of inhibition are much bigger than what Piatek et al. (2020) found with dif
+
+[E17] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibits
+Sentence: All these results suggest that the ORF6 product inhibits his operon exp
+
+[E18] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: This suggested that the presence of mucin had inhibited LA
+
+[E19] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=intro | Confidence=NA
+Trigger: inhibition
+Sentence: otential avenues are: (1) co-aggregation with pathogens and growth inhibition, (2
+
+[E20] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=unknown | Confidence=NA
+Trigger: inhibition
+Sentence: We have suggested that feeding of JB-1 caused inhibition of an
+
+[E21] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: and Lb. casei subsp. casei LGG (Habibi-Najafi et al., 1995) were not inhibited
+
+[E22] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=methods | Confidence=NA
+Trigger: inhibition
+Sentence: ayer proteins from ZJ621 and LGGsigniﬁcantly affected the inhibition ability again
+
+[E23] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibits
+Sentence: Human intravenous IgG inhibits the development of coro-nary arteritis i
+
+[E24] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: n partial inhibition.
+
+[E25] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=methods | Confidence=NA
+Trigger: antimicrobial activity
+Sentence: , Verhoeven TLA, Desair J, Marchal K, Vanderleyden J, Nagy I (2006) Strong antimicrobial activity ofLactobacillus rhamnosus GG against Salmonella typhimurium is due to accumulation of lactic acid.
+
+[E26] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=abstract | Confidence=NA
+Trigger: inhibition
+Sentence: istics: hydrophobicity, auto aggregative capability, inhibition of indicator patho
+
+[E27] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: antimicrobial activity
+Sentence: Strong antimicrobial activity ofLactobacillus rhamnosus GG against Salmonella typhimurium is due to accumulation of lactic acid.
+
+[E28] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: Ip et al. (1991, 1994) have suggested that CLA-mediated inhibition of mammary car
+
+[E29] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=methods | Confidence=NA
+Trigger: inhibition
+Sentence: Co-aggregation and growth inhibition of probiotic lactob
+
+[E30] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=In Vitro | Role=Reference | Section=intro | Confidence=NA
+Trigger: inhibited
+Sentence: er and inhibited α-synuclein aggregation and cytotoxicity in vitro .13However, one
+
+[E31] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: Inhibition
+Sentence: DIj Displacement Inhibition.
+
+[E32] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: Inhibition
+Sentence: 70 Gram L, Melchiorsen J, Spanggaard B, Huber I, Nielsen TF (1999) Inhibition of V
+
+[E33] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=In Vitro | Role=Reference | Section=intro | Confidence=NA
+Trigger: inhibited
+Sentence: lly, after 48 h of exposure L.GG significantly inhibited proliferation in Caco-2 c
+
+[E34] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: e of NRIC1832.These results suggest that NRIC1832 inhibited Th2 diﬀerentiation.
+
+[E35] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: Inhibition
+Sentence: DIj Displacement 677 Inhibition.
+
+[E36] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=methods | Confidence=NA
+Trigger: inhibited
+Sentence: ty was greatly inhibited by aggregates formation of AgNPs ( Martins et al., 2012
+
+[E37] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: r protein removed, ZJ621 and LGG inhibition activity against E. coli k88 were sign
+
+[E38] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: ivity of propionibacteria, coaggregation with pathogens and adhesion inhibition,
+
+[E39] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: CEC, high percent- age of co-aggregation, and inhibition against MCP, inability to
+
+[E40] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibition | inhibition zone
+Sentence: r of growth inhibition zone (including D of indicator disc) (mm) L. fermentum U-21 L. fermentum 279 L. rhamnosus GG 1 mol l−17.0 ± 0.4* 7.0 ± 0.3* 19.0 ± 2.0 1.5 mol l−18.0 ± 1.5* 8.0 ± 1.4* 20.0 ± 3.
+
+[E41] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: current study, SLP from 298 LGG inhibited p38MAPK signalling in IPEC-J2 cells a f
+
+[E42] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: produced more NO itself, suggesting a non-NO dependent inhibition of S. mutans
+
+[E43] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibits
+Sentence: O'Neill, 799 Lactobacillus rhamnosus GG inhibits the toxic effects of Staphylococcus aureus on 800 epidermal ker
+
+[E44] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=intro | Confidence=NA
+Trigger: inhibition
+Sentence: ts that involve adhesion, co-aggregation, competitive inhibition, production of or
+
+[E45] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibits
+Sentence: ansferrin, inhibits platelet aggregation and re-lease reaction.
+
+[E46] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Animal | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibits
+Sentence: This suggests that probiotic treatment in mice inhibits C.
+
+[E47] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=abstract | Confidence=NA
+Trigger: inhibition
+Sentence: h as inhibition of plate-let-aggregation, anti-bacteria, cytotoxicity and anti-dem
+
+[E48] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: oss of inhibitory activity, suggesting that inhibition was not due to hydrogen pe
+
+[E49] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=intro | Confidence=NA
+Trigger: inhibition
+Sentence: Both VK1 and L.GG administered alone up to 72 h, caused inhibition
+
+[E50] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibition | inhibition zone
+Sentence: nce to PQ as shown by the disk diffusion method Asterisks indicate significant differences versus “L. rhamnosus GG” in the same line at P < 0.05PQ concentration Diameter of growth inhibition zone (in
+
+[E51] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=intro | Confidence=NA
+Trigger: inhibition
+Sentence: us DCE 471, Lactobacillus casei YIT 9029, Lactobacillus gasseri K7,Lactobacillus johnsonii La1, and Lactobacillus rhamnosus GG) contribute to the inhibition ofH. pylori .
+
+[E52] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: Antimicrobial activity
+Sentence: s ( P<0.05) Table 3 Antimicrobial activity of the cell-free culture supernatant of FSMM strains and Lactobacillus rhamnosus GG (LGG) against six enteropathogenic bacteria Enteropathogenic bacteriaAnti
+
+[E53] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: high adhesion ability except LGG showed signi ﬁcantly higher inhibition ability ag
+
+[E54] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibition
+Sentence: s and untreated cells which suggest that their inhibition might be done by other m
+
+[E55] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: Thus, we suggest inhibition of activated NF/H9260B by rad
+
+[E56] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: antimicrobial activity
+Sentence: the antimicrobial activity, suggesting that the activitywas not due to any carbohy
+
+[E57] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibits
+Sentence: The results suggest that exogenous IAA inhibits bacterial growth,
+
+[E58] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: HTj29 and Cacoj2 cells than LGG in 352 all three inhibition assays.
+
+[E59] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibits
+Sentence: Probiotic LGG treatment inhibits inﬂammation and angiogene
+
+[E60] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=intro | Confidence=NA
+Trigger: inhibited
+Sentence: r to verify whether VK1 and L.GG treatment inhibited cell proliferation by inducin
+
+[E61] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: ains ZJ616, ZJ617, ZJ621 and LGG have higher inhibition ability against E. coli k8
+
+[E62] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: LAB strains inhibited and co-aggregated with 100% of the assayed patho- gens, espe
+
+[E63] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: Enteritidis 90/390 adherence whereas L. rhamnosus GG inhibited these pathogens by the same mechanism in 86.49±2.14% and 87.25±2.95% resp
+
+[E64] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: antimicrobial activity
+Sentence: ng antimicrobial activity of LGG to S.Typhimurium was mediated by production of or
+
+[E65] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibited
+Sentence: ression of the mtl operon suggested that the activity of MtlR is inhibited via
+
+[E66] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibited
+Sentence: ofsecretary IgA and systemic IgG, and cytokines that may have inhibited the growth
+
+[E67] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: In spite of co-aggregation, growth inhibition and adhesion to saliva
+
+[E68] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: Inhibition
+Sentence: 40 AIj Adhesion Inhibition
+
+[E69] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibition
+Sentence: Zone of inhibition produced b
+
+[E70] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=intro | Confidence=NA
+Trigger: inhibition
+Sentence: anisms are not known, it is suggestedthat inactivation or inhibition of the format
+
+[E71] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: umTS,thoughelectron-withdrawinggroupswere beneficial for inhibition, the presence
+
+[E72] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=methods | Confidence=NA
+Trigger: inhibition
+Sentence: The commercial strain LGG showed higher inhibition efﬁ - ciency against E.
+
+[E73] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: Inhibition
+Sentence: apoptosis as observed in LGG + DMH treatment group. Inhibition of COX-2
+
+[E74] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: Inhibition
+Sentence: AIj Adhesion Inhibition
+
+[E75] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: The pathogenic bacterial inhibition was moderate by Sac.
+
+[E76] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: antibacterial activity
+Sentence: The results suggested that the stronger antibacterial activity of
+
+[E77] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: Inhibition
+Sentence: CIj Co mpetitive Inhibition
+
+[E78] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=methods | Confidence=NA
+Trigger: inhibition
+Sentence: Stecksen-Blicks C, et al. Co-aggregation and growth inhibition of probiotic lacto
+
+[E79] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: The highest inhibition was reported with L. rhamnosus SMC6 strain (39.2%) and the lowest inhibition was with L. delbrueckii ssp. bulgaricus
+
+[E80] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=methods | Confidence=NA
+Trigger: inhibited
+Sentence: Thus, it could be suggested that microorganisms inhibited lipid peroxid
+
+[E81] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: antagonistic activity
+Sentence: er count was observed in T4 suggesting the antagonistic activity of laboratory iso
+
+[E82] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibited
+Sentence: ation of Streptococcus mutans was inhibited when i t was in co -culture with L. plantarum 299v or L. rhamnosus GG due to antimicrobials produced by the lactobacilli.
+
+[E83] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=methods | Confidence=NA
+Trigger: inhibition
+Sentence: capacity against pathogens, suggesting that the inhibition capacity is complicated
+
+[E84] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibits
+Sentence: b, pro–caspase-1, or NLRP3, suggesting that KW3110 inhibits IL-1 bsecretion by sup
+
+[E85] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Unknown | Role=Unknown | Section=methods | Confidence=NA
+Trigger: Inhibition
+Sentence: ws RP, et al. Inhibition of Jagged-mediated Notch signaling disrupts zebraﬁsh bili
+
+[E86] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=In Vitro | Role=Unknown | Section=results | Confidence=NA
+Trigger: Inhibition
+Sentence: Inhibition of pathogens by pr
+
+[E87] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_3323b215f477cba2 | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Sentence: ults for the interventions of healthy adults with Lactobacillus rhamnosus GG.Compound (medicine)Connectivity scoreBiochemical interactionTherapeutic usageMG-1321specific proteasome inhibitor reduces d
+
+[E88] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_50cb9e43619ca8e1 | Study=Unknown | Role=Experimental | Section=discussion | Confidence=NA
+Sentence: Therefore, we first used Lactobacillus Rhamnosus LRX01 to inhibit FXR expression in the ileum to assess if it reduces susceptibility to LPS exposure in the offspring from CA-f
+
+[E89] Direction=Unresolved | Source=SOURCE_HIGH_VALUE_UNRESOLVED | Publication=PUBT_8f91177d0d945587 | Study=Unknown | Role=Experimental | Section=results | Confidence=NA
+Sentence: The above results suggest that probiotics may competitively inhibit Gram",Pathogen inhibition,pathogen inhibition,Positive,Yes,Moderate,1,PRIMARY: Positive=1; Negative+Null=0; Conflict excluded,GCF_028475085.1 | GCA_028475085.1,"GCF_028475085.1:current_genome_key,primary_accession,gcf_accession || GCA_028475085.1:gca_accession,local_genome_files",MATCHED,EXACT_VERSION,/root/autodl-tmp/axw/genomes/ncbi/GCA_028475085.1.fa.gz,GCA_028475085.1.fa.gz,GCA_028475085.1,True,3007263,3007263,1,PRIMARY,True,NC_0015,ANI95_0003
+17,GREV511_017,GRP_44039912AD,v5.3.review_group_id_v5_3,2,2_POSITIVE,STRAIN_000181,GCF_000173255.5,GCF_000173255.5,Lacticaseibacillus rhamnosus,HN001,Pathogen inhibition,pathogen inhibition,1,1,0,0,0,0,Positive,PUB_UNRESOLVED,In Vitro,results,Positive,Yes,Moderate,Positive,Yes,Moderate,,,REVIEWED,Stored in-vitro evidence explicitly describes inhibition of Gram-negative organisms by L. rhamnosus HN001 alone and in combination.,"[E01] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=In Vitro | Role=Unknown | Section=results | Confidence=NA
+Trigger: inhibition
+Sentence: o, Growth and adhesion to HT-29 cells inhibition of Gram-negatives by Bifidobacterium longum BB536 eLactobacillus rhamnosus HN001 alone and in combination, Eur.",Pathogen inhibition,pathogen inhibition,Positive,Yes,Moderate,1,PRIMARY: Positive=1; Negative+Null=0; Conflict excluded,GCF_000173255.5 | GCA_000173255.3,"GCF_000173255.5:current_genome_key,primary_accession,gcf_accession || GCA_000173255.3:gca_accession,local_genome_files",MATCHED,EXACT_VERSION,/root/autodl-tmp/axw/genomes/ncbi/GCA_000173255.3.fa.gz,GCA_000173255.3.fa.gz,GCA_000173255.3,True,2992972,2961421,2,PRIMARY,True,NC_0023,ANI95_0003
+18,GREV511_018,GRP_F66BD46D5E,v5.3.review_group_id_v5_3,2,2_POSITIVE,STRAIN_000501,GCF_002286275.1,GCF_002286275.1,Lactiplantibacillus plantarum,LP3,Pathogen inhibition,pathogen inhibition,2,2,0,0,0,0,Positive,PUB_UNRESOLVED,Animal,discussion,Positive,Yes,Moderate,Positive,Yes,Moderate,Immunomodulation,Th17/Th1 inflammatory response,REVIEWED,"The evidence concerns inhibition of Th17/Th1 inflammatory responses, not pathogen inhibition; retained after correcting the function/endpoint.","[E01] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Animal | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibits
+Sentence: This eluci- dates that L. plantarum CBT LP3 inhibits Th17 and Th1 responses in intestinal in ﬂammation.
+
+[E02] Direction=Positive | Source=v5.auto_direction+v5.suggested_direction+v5.auto_direction_raw | Publication=PUB_UNRESOLVED | Study=Animal | Role=Reference | Section=discussion | Confidence=NA
+Trigger: inhibits
+Sentence: CBT LP3 inhibits Th17 and Th1 responses in intestinal in ﬂammation.",Immunomodulation,Th17/Th1 inflammatory response,Positive,Yes,Moderate,1,PRIMARY: Positive=1; Negative+Null=0; Conflict excluded,GCF_002286275.1 | GCA_002286275.1,"GCF_002286275.1:current_genome_key,primary_accession,gcf_accession || GCA_002286275.1:gca_accession,local_genome_files",MATCHED,EXACT_VERSION,/root/autodl-tmp/axw/genomes/ncbi/GCA_002286275.1.fa.gz,GCA_002286275.1.fa.gz,GCA_002286275.1,True,3329954,3259858,3,PRIMARY,True,NC_0059,ANI95_0001

@@ -1,0 +1,85 @@
+{
+  "status": "WAIT_RUNTIME_SPLIT_MANIFEST",
+  "frozen": {
+    "rows": 4825,
+    "genomes": 965,
+    "summary": {
+      "1": {
+        "rows": 965,
+        "genomes": 965,
+        "counts": {
+          "train": 515,
+          "outer": 351,
+          "val": 99
+        },
+        "expected_counts": {
+          "train": 515,
+          "val": 99,
+          "outer": 351
+        },
+        "expected_count_pass": true
+      },
+      "2": {
+        "rows": 965,
+        "genomes": 965,
+        "counts": {
+          "train": 748,
+          "val": 149,
+          "outer": 68
+        },
+        "expected_counts": {
+          "train": 748,
+          "val": 149,
+          "outer": 68
+        },
+        "expected_count_pass": true
+      },
+      "3": {
+        "rows": 965,
+        "genomes": 965,
+        "counts": {
+          "train": 648,
+          "outer": 168,
+          "val": 149
+        },
+        "expected_counts": {
+          "train": 648,
+          "val": 149,
+          "outer": 168
+        },
+        "expected_count_pass": true
+      },
+      "4": {
+        "rows": 965,
+        "genomes": 965,
+        "counts": {
+          "train": 648,
+          "outer": 214,
+          "val": 103
+        },
+        "expected_counts": {
+          "train": 648,
+          "val": 103,
+          "outer": 214
+        },
+        "expected_count_pass": true
+      },
+      "5": {
+        "rows": 965,
+        "genomes": 965,
+        "counts": {
+          "train": 701,
+          "outer": 164,
+          "val": 100
+        },
+        "expected_counts": {
+          "train": 701,
+          "val": 100,
+          "outer": 164
+        },
+        "expected_count_pass": true
+      }
+    }
+  },
+  "runtime_manifests": []
+}

@@ -1,0 +1,27 @@
+{
+  "status": "STAGE60_FINAL_OPERON_EVIDENCE_FROZEN",
+  "formal_model_name": "GenoGramma",
+  "task": "DOOR2-derived adjacent-gene operon-status prediction",
+  "scope": "order-sensitive local genomic neighborhood representation",
+  "main_evaluation": "ANI95 lineage-blocked OOF-5CV",
+  "formal_examples": 164302,
+  "genomes": 96,
+  "ANI95_lineages": 54,
+  "target_pair_zero_based": [
+    31,
+    32
+  ],
+  "important_controls": [
+    "matched pair-aware baselines",
+    "same-strand-only evaluation",
+    "StrandMatch-only baseline",
+    "equal-lineage bootstrap",
+    "768D representation ablation",
+    "contextual-edge paired lineage bootstrap"
+  ],
+  "no_new_model_fitting": true,
+  "no_posthoc_retuning": true,
+  "main_formal_representation": "A5 Full768 / Stage56 preregistered GenoGramma pair-aware representation",
+  "important_ablation_note": "A3 PairPlusEdge achieved a higher point estimate than Full768, but Full768 remains the formal preregistered downstream representation. A3 is interpreted only as an ablation result.",
+  "stage57C_stage59A_full_consistency": true
+}

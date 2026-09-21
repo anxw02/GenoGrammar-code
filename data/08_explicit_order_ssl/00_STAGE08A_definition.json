@@ -1,0 +1,25 @@
+{
+  "stage": "Stage08A",
+  "timestamp": "2026-09-15T09:21:50.535702",
+  "analysis": "Explicit Order-Aware SSL smoke qualification",
+  "phenotype_labels_used": false,
+  "outer_fold": 1,
+  "outer_holdout_used_for_training": false,
+  "outer_holdout_used_for_early_stopping": false,
+  "nearclone_grouped_inner_split": true,
+  "window_len": 64,
+  "objectives": [
+    "TRUE_LOCAL_GLOBAL_shuffle_classification",
+    "TRUE_GLOBAL_gt_TRUE_LOCAL_ranking",
+    "relative_position_prediction_1_to_16",
+    "adjacent_vs_nonadjacent_prediction"
+  ],
+  "acceptance_criteria": {
+    "outer_shuffle_accuracy": ">=0.60",
+    "outer_rank_fraction": ">=0.75",
+    "outer_global_minus_local": ">=0.01",
+    "outer_relative_position_accuracy": ">=0.10",
+    "outer_adjacency_accuracy": ">=0.70"
+  },
+  "scientific_boundary": "Architecture qualification only; not phenotype prediction."
+}

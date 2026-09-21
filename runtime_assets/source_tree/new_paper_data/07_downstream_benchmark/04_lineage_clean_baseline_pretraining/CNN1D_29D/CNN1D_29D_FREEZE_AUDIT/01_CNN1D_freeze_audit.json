@@ -1,0 +1,467 @@
+{
+  "stage": "Stage42_CNN1D_formal_freeze",
+  "model": "CNN1D",
+  "status": "CNN1D_FROZEN_PASS",
+  "folds": {
+    "1": {
+      "pass": true,
+      "expected": {
+        "seed": 42,
+        "train": 515,
+        "val": 99,
+        "outer": 351,
+        "train_lineages": 64,
+        "val_lineages": 4,
+        "outer_lineages": 15,
+        "best_epoch": 5
+      },
+      "checks": {
+        "artifact_DONE.json": true,
+        "artifact_best_checkpoint.pt": true,
+        "artifact_outer_metrics.json": true,
+        "artifact_split_manifest.csv": true,
+        "artifact_training_history.csv": true,
+        "Fold1_SHA_DONE.json": true,
+        "Fold1_SHA_best_checkpoint.pt": true,
+        "Fold1_SHA_outer_metrics.json": true,
+        "Fold1_SHA_split_manifest.csv": true,
+        "Fold1_SHA_training_history.csv": true,
+        "seed": true,
+        "best_epoch": true,
+        "n_train": true,
+        "n_inner_val": true,
+        "n_outer_test": true,
+        "primary_pass": true,
+        "phenotype_labels_unused": true,
+        "outer_not_training": true,
+        "outer_not_early_stopping": true,
+        "outer_not_model_selection": true,
+        "split_total_965": true,
+        "split_train_count": true,
+        "split_val_count": true,
+        "split_outer_count": true,
+        "train_lineages": true,
+        "val_lineages": true,
+        "outer_lineages": true,
+        "lineage_overlap_zero": true
+      },
+      "files": {
+        "DONE.json": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_1/DONE.json",
+          "exists": true,
+          "size": 933,
+          "sha256": "5902ab51baa4877c165805444c8366468af0339ed5b3ed95b7ac76bee65defdf"
+        },
+        "best_checkpoint.pt": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_1/best_checkpoint.pt",
+          "exists": true,
+          "size": 2047747,
+          "sha256": "729ee216d218b7b480dc9bf5cf6ec7989d3d43b392b7bc26ddfd77a2b44866f3"
+        },
+        "outer_metrics.json": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_1/outer_metrics.json",
+          "exists": true,
+          "size": 1369,
+          "sha256": "322b754fc0437f3ae548415e48a35cbb798402f53d9c6411e2775724e2fdad27"
+        },
+        "split_manifest.csv": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_1/split_manifest.csv",
+          "exists": true,
+          "size": 41994,
+          "sha256": "d46919e44b1a9551ef104b9a9e1084394130ce8c5f0b566d6143b19d3d5b2720"
+        },
+        "training_history.csv": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_1/training_history.csv",
+          "exists": true,
+          "size": 1101,
+          "sha256": "bec439ac7275f7acfd8a8aab527d01cfe84587f63d9c729874495c7adcfd100c"
+        }
+      },
+      "outer_metrics": {
+        "loss": 1.1781513959169387,
+        "shuffle_accuracy": 0.334375,
+        "rank_fraction_global_gt_local": 0.9234375,
+        "strong_rank_fraction": 0.8583333333333333,
+        "local_displacement_mean": 0.14053749566276869,
+        "global_displacement_mean": 0.2876139536499977,
+        "global_minus_local": 0.14707645798722901,
+        "adjacency_accuracy": 0.61875,
+        "neighbor_top1_accuracy": 0.18489583333333334
+      }
+    },
+    "2": {
+      "pass": true,
+      "expected": {
+        "seed": 142,
+        "train": 748,
+        "val": 149,
+        "outer": 68,
+        "train_lineages": 52,
+        "val_lineages": 14,
+        "outer_lineages": 17,
+        "best_epoch": 4
+      },
+      "checks": {
+        "artifact_DONE.json": true,
+        "artifact_best_checkpoint.pt": true,
+        "artifact_outer_metrics.json": true,
+        "artifact_split_manifest.csv": true,
+        "artifact_training_history.csv": true,
+        "seed": true,
+        "best_epoch": true,
+        "n_train": true,
+        "n_inner_val": true,
+        "n_outer_test": true,
+        "primary_pass": true,
+        "phenotype_labels_unused": true,
+        "outer_not_training": true,
+        "outer_not_early_stopping": true,
+        "outer_not_model_selection": true,
+        "split_total_965": true,
+        "split_train_count": true,
+        "split_val_count": true,
+        "split_outer_count": true,
+        "train_lineages": true,
+        "val_lineages": true,
+        "outer_lineages": true,
+        "lineage_overlap_zero": true
+      },
+      "files": {
+        "DONE.json": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_2/DONE.json",
+          "exists": true,
+          "size": 947,
+          "sha256": "ddcc066548dc2a50f269eae30ae42a4eef330a6dda7d569152703b1a81b10bf9"
+        },
+        "best_checkpoint.pt": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_2/best_checkpoint.pt",
+          "exists": true,
+          "size": 2047747,
+          "sha256": "9551186d8c2eff4ba217569c20297fd2a564edd1d1ee260fab0b9dd4b1f3d666"
+        },
+        "outer_metrics.json": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_2/outer_metrics.json",
+          "exists": true,
+          "size": 1383,
+          "sha256": "c6c062d66990f9fd90e1b6b485759250577af55caff94901afc402991f821590"
+        },
+        "split_manifest.csv": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_2/split_manifest.csv",
+          "exists": true,
+          "size": 42177,
+          "sha256": "0cc4333bad7ac6ffe98fa9e7a8f497bbd24222ba4f4c7faeafee1ce363ad106b"
+        },
+        "training_history.csv": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_2/training_history.csv",
+          "exists": true,
+          "size": 1085,
+          "sha256": "09fa10fdea4959b76d4ece77b4f60e65e1d999becb5804207ac59c541919efea"
+        }
+      },
+      "outer_metrics": {
+        "loss": 1.2651272058486938,
+        "shuffle_accuracy": 0.33229166666666665,
+        "rank_fraction_global_gt_local": 0.8838541666666667,
+        "strong_rank_fraction": 0.7921875,
+        "local_displacement_mean": 0.13097882643342018,
+        "global_displacement_mean": 0.22209808925787608,
+        "global_minus_local": 0.0911192628244559,
+        "adjacency_accuracy": 0.5921875,
+        "neighbor_top1_accuracy": 0.15989583333333332
+      }
+    },
+    "3": {
+      "pass": true,
+      "expected": {
+        "seed": 242,
+        "train": 648,
+        "val": 149,
+        "outer": 168,
+        "train_lineages": 55,
+        "val_lineages": 11,
+        "outer_lineages": 17,
+        "best_epoch": 4
+      },
+      "checks": {
+        "artifact_DONE.json": true,
+        "artifact_best_checkpoint.pt": true,
+        "artifact_outer_metrics.json": true,
+        "artifact_split_manifest.csv": true,
+        "artifact_training_history.csv": true,
+        "seed": true,
+        "best_epoch": true,
+        "n_train": true,
+        "n_inner_val": true,
+        "n_outer_test": true,
+        "primary_pass": true,
+        "phenotype_labels_unused": true,
+        "outer_not_training": true,
+        "outer_not_early_stopping": true,
+        "outer_not_model_selection": true,
+        "split_total_965": true,
+        "split_train_count": true,
+        "split_val_count": true,
+        "split_outer_count": true,
+        "train_lineages": true,
+        "val_lineages": true,
+        "outer_lineages": true,
+        "lineage_overlap_zero": true
+      },
+      "files": {
+        "DONE.json": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_3/DONE.json",
+          "exists": true,
+          "size": 945,
+          "sha256": "4fc65fe6fab18f1ed88b245d1895ffd5dac882c71ebc6bccac74d040f77f99dc"
+        },
+        "best_checkpoint.pt": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_3/best_checkpoint.pt",
+          "exists": true,
+          "size": 2047747,
+          "sha256": "0a28423cbc8fe74326b1f0f5d80cd701fbdf405176121186abcfefb7d340d040"
+        },
+        "outer_metrics.json": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_3/outer_metrics.json",
+          "exists": true,
+          "size": 1380,
+          "sha256": "74d5a83674ec6332c4dd01aa0432a6aa5e5f962c5c77e403c470afd50e847d9b"
+        },
+        "split_manifest.csv": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_3/split_manifest.csv",
+          "exists": true,
+          "size": 42077,
+          "sha256": "d8e3ee354a9dd31fe6a5fa3c2f8379126517ba1880f9a28633ea3074d9fcdfe1"
+        },
+        "training_history.csv": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_3/training_history.csv",
+          "exists": true,
+          "size": 1087,
+          "sha256": "7ab93be38ea6bcf206bcb7cd8b04933064a6726a99c1f020af857a9684e0c743"
+        }
+      },
+      "outer_metrics": {
+        "loss": 1.1282331854104997,
+        "shuffle_accuracy": 0.3333333333333333,
+        "rank_fraction_global_gt_local": 0.928125,
+        "strong_rank_fraction": 0.8619791666666666,
+        "local_displacement_mean": 0.13027806455890337,
+        "global_displacement_mean": 0.2600231950481733,
+        "global_minus_local": 0.12974513048926992,
+        "adjacency_accuracy": 0.621875,
+        "neighbor_top1_accuracy": 0.20833333333333334
+      }
+    },
+    "4": {
+      "pass": true,
+      "expected": {
+        "seed": 342,
+        "train": 648,
+        "val": 103,
+        "outer": 214,
+        "train_lineages": 54,
+        "val_lineages": 12,
+        "outer_lineages": 17,
+        "best_epoch": 5
+      },
+      "checks": {
+        "artifact_DONE.json": true,
+        "artifact_best_checkpoint.pt": true,
+        "artifact_outer_metrics.json": true,
+        "artifact_split_manifest.csv": true,
+        "artifact_training_history.csv": true,
+        "seed": true,
+        "best_epoch": true,
+        "n_train": true,
+        "n_inner_val": true,
+        "n_outer_test": true,
+        "primary_pass": true,
+        "phenotype_labels_unused": true,
+        "outer_not_training": true,
+        "outer_not_early_stopping": true,
+        "outer_not_model_selection": true,
+        "split_total_965": true,
+        "split_train_count": true,
+        "split_val_count": true,
+        "split_outer_count": true,
+        "train_lineages": true,
+        "val_lineages": true,
+        "outer_lineages": true,
+        "lineage_overlap_zero": true
+      },
+      "files": {
+        "DONE.json": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_4/DONE.json",
+          "exists": true,
+          "size": 963,
+          "sha256": "7fbf63f65af9ea30b5f9ecb41343cf7e727b9e5f49549f1caa3dfcbd7889ae23"
+        },
+        "best_checkpoint.pt": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_4/best_checkpoint.pt",
+          "exists": true,
+          "size": 2047747,
+          "sha256": "be06ba2c257c23c685d5939a39821761656cf85a15782dd6457bc19bc36ea0f0"
+        },
+        "outer_metrics.json": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_4/outer_metrics.json",
+          "exists": true,
+          "size": 1397,
+          "sha256": "f8df329f3049a46c676500a165bc73a38b4e665d1a04e0be7de8be484cd49915"
+        },
+        "split_manifest.csv": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_4/split_manifest.csv",
+          "exists": true,
+          "size": 42123,
+          "sha256": "326f12e5858eab8f7c1f5e53077363003f9738dc8f5917bf068998761c3c6afd"
+        },
+        "training_history.csv": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_4/training_history.csv",
+          "exists": true,
+          "size": 1062,
+          "sha256": "66bfc5db1503166e8cec2c13f8c4d2b27080eddc304b5dea23da862d6c7a82dd"
+        }
+      },
+      "outer_metrics": {
+        "loss": 1.1162674650549889,
+        "shuffle_accuracy": 0.33368055555555554,
+        "rank_fraction_global_gt_local": 0.9229166666666667,
+        "strong_rank_fraction": 0.8552083333333333,
+        "local_displacement_mean": 0.128186238805453,
+        "global_displacement_mean": 0.2595599969228109,
+        "global_minus_local": 0.1313737581173579,
+        "adjacency_accuracy": 0.6177083333333333,
+        "neighbor_top1_accuracy": 0.23229166666666667
+      }
+    },
+    "5": {
+      "pass": true,
+      "expected": {
+        "seed": 442,
+        "train": 701,
+        "val": 100,
+        "outer": 164,
+        "train_lineages": 57,
+        "val_lineages": 9,
+        "outer_lineages": 17,
+        "best_epoch": 5
+      },
+      "checks": {
+        "artifact_DONE.json": true,
+        "artifact_best_checkpoint.pt": true,
+        "artifact_outer_metrics.json": true,
+        "artifact_split_manifest.csv": true,
+        "artifact_training_history.csv": true,
+        "seed": true,
+        "best_epoch": true,
+        "n_train": true,
+        "n_inner_val": true,
+        "n_outer_test": true,
+        "primary_pass": true,
+        "phenotype_labels_unused": true,
+        "outer_not_training": true,
+        "outer_not_early_stopping": true,
+        "outer_not_model_selection": true,
+        "split_total_965": true,
+        "split_train_count": true,
+        "split_val_count": true,
+        "split_outer_count": true,
+        "train_lineages": true,
+        "val_lineages": true,
+        "outer_lineages": true,
+        "lineage_overlap_zero": true
+      },
+      "files": {
+        "DONE.json": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_5/DONE.json",
+          "exists": true,
+          "size": 945,
+          "sha256": "4c36acc513bb1f4eecbdf078232f8e88bc82cdba7f7b056210e52728b98b6b10"
+        },
+        "best_checkpoint.pt": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_5/best_checkpoint.pt",
+          "exists": true,
+          "size": 2047747,
+          "sha256": "f71da80000eb717fbec41af73a0d4aea5ed6ebf83fe65166e3c0187dc0b9daaf"
+        },
+        "outer_metrics.json": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_5/outer_metrics.json",
+          "exists": true,
+          "size": 1368,
+          "sha256": "f675715d9eb0c05dc789dd0c7cd005f47ee65755e7bebcab1bdbb918eff19cbb"
+        },
+        "split_manifest.csv": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_5/split_manifest.csv",
+          "exists": true,
+          "size": 42179,
+          "sha256": "afbe75544f44aa3c1997dd0ca02c96ca6a592d82e65589d248ec8ccf9e2f67dc"
+        },
+        "training_history.csv": {
+          "path": "/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D/fold_5/training_history.csv",
+          "exists": true,
+          "size": 1070,
+          "sha256": "32fb045c86cad8a342998b9afb6b64bed38f468fc6e76c423c341b67494689a5"
+        }
+      },
+      "outer_metrics": {
+        "loss": 1.1082328394055367,
+        "shuffle_accuracy": 0.3385416666666667,
+        "rank_fraction_global_gt_local": 0.9328125,
+        "strong_rank_fraction": 0.8625,
+        "local_displacement_mean": 0.12385561515887579,
+        "global_displacement_mean": 0.24773038824399313,
+        "global_minus_local": 0.12387477308511734,
+        "adjacency_accuracy": 0.6322916666666667,
+        "neighbor_top1_accuracy": 0.21458333333333332
+      }
+    }
+  },
+  "global_checks": {
+    "script_exact_29G": true,
+    "Stage29A_split_unchanged": true,
+    "formal_resume_returned_0": true,
+    "Stage08B1_final_pass": true,
+    "primary_5_of_5": true,
+    "no_traceback_after_successful_run": true,
+    "no_cuda_oom": true
+  },
+  "script_sha256": "b83981946b97878e10411643dff02c6d2fd2cb1219c37a284f08ec73f66e54cd",
+  "frozen_split_sha256": "e5535d4bc4e4fed8430fc6e4c0847998fa508ffcab83e00bfed172abdc221251",
+  "aggregate_outer_metrics": {
+    "shuffle": {
+      "mean": NaN,
+      "sd": NaN,
+      "n": 0
+    },
+    "rank": {
+      "mean": NaN,
+      "sd": NaN,
+      "n": 0
+    },
+    "dL": {
+      "mean": NaN,
+      "sd": NaN,
+      "n": 0
+    },
+    "dG": {
+      "mean": NaN,
+      "sd": NaN,
+      "n": 0
+    },
+    "delta": {
+      "mean": NaN,
+      "sd": NaN,
+      "n": 0
+    },
+    "adj": {
+      "mean": NaN,
+      "sd": NaN,
+      "n": 0
+    },
+    "next": {
+      "mean": NaN,
+      "sd": NaN,
+      "n": 0
+    }
+  },
+  "all_5_folds_pass": true,
+  "final_decision": "CNN1D_FROZEN_PASS"
+}

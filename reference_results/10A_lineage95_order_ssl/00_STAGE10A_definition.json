@@ -1,0 +1,36 @@
+{
+  "stage": "Stage10A",
+  "created": "2026-09-15T10:18:37.471365",
+  "purpose": "Hard phylogenetic robustness test of explicit genome-order representation.",
+  "architecture": "ExplicitNeighborhoodEncoder",
+  "architecture_source": "<HISTORICAL_ROOT>/08A2_explicit_neighborhood_ssl_smoke.py",
+  "architecture_sha256": "2666070b1960bd0aea72e91df7b4bb480f9b2a33551567d4efe2105021a47fef",
+  "n_genomes": 965,
+  "outer_group": "95% ANI lineage",
+  "lineage_column": "FINAL_lineage_95_block",
+  "outer_fold_assignment": "Deterministic greedy lineage-block balancing.",
+  "inner_validation_group": "95% ANI lineage",
+  "fold_seeds": {
+    "1": 42,
+    "2": 142,
+    "3": 242,
+    "4": 342,
+    "5": 442
+  },
+  "epochs": 5,
+  "steps_per_epoch": 400,
+  "batch_size": 48,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "primary_thresholds": {
+    "shuffle_accuracy": 0.6,
+    "rank_fraction_global_gt_local": 0.8,
+    "global_displacement_mean": 0.05,
+    "global_minus_local": 0.03
+  },
+  "required_pass_folds": 4,
+  "phenotype_labels_used": false,
+  "architecture_retuned": false,
+  "thresholds_retuned": false,
+  "models_trained_from_scratch": true
+}

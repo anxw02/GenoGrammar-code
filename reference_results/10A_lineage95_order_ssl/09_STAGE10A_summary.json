@@ -1,0 +1,180 @@
+{
+  "status": "PASS",
+  "stage": "Stage10A",
+  "timestamp": "2026-09-15T10:26:40.687328",
+  "evaluation": "95% ANI lineage-blocked five-fold explicit-order SSL",
+  "lineage_column": "FINAL_lineage_95_block",
+  "n_genomes": 965,
+  "n_folds": 5,
+  "primary_thresholds": {
+    "shuffle_accuracy": 0.6,
+    "rank_fraction_global_gt_local": 0.8,
+    "global_displacement_mean": 0.05,
+    "global_minus_local": 0.03
+  },
+  "required_pass_folds": 4,
+  "primary_pass_folds": 5,
+  "formal_pass": true,
+  "fold_results": [
+    {
+      "outer_fold": 1,
+      "best_epoch": 3,
+      "n_train": 603,
+      "n_inner_val": 141,
+      "n_outer_test": 221,
+      "n_train_lineages": 67,
+      "n_inner_val_lineages": 15,
+      "n_outer_test_lineages": 1,
+      "shuffle_accuracy": 0.8432291666666667,
+      "rank_fraction_global_gt_local": 0.93125,
+      "strong_rank_fraction": 0.8932291666666666,
+      "local_displacement_mean": 0.07700667555133502,
+      "global_displacement_mean": 0.24365247736374537,
+      "global_minus_local": 0.16664580181241034,
+      "adjacency_accuracy": 0.6140625,
+      "neighbor_top1_accuracy": 0.1890625,
+      "primary_pass": true
+    },
+    {
+      "outer_fold": 2,
+      "best_epoch": 3,
+      "n_train": 557,
+      "n_inner_val": 222,
+      "n_outer_test": 186,
+      "n_train_lineages": 61,
+      "n_inner_val_lineages": 2,
+      "n_outer_test_lineages": 20,
+      "shuffle_accuracy": 0.8685763888888889,
+      "rank_fraction_global_gt_local": 0.9484375,
+      "strong_rank_fraction": 0.925,
+      "local_displacement_mean": 0.0800759290655454,
+      "global_displacement_mean": 0.26384772956371305,
+      "global_minus_local": 0.18377180049816766,
+      "adjacency_accuracy": 0.5994791666666667,
+      "neighbor_top1_accuracy": 0.215625,
+      "primary_pass": true
+    },
+    {
+      "outer_fold": 3,
+      "best_epoch": 5,
+      "n_train": 637,
+      "n_inner_val": 142,
+      "n_outer_test": 186,
+      "n_train_lineages": 45,
+      "n_inner_val_lineages": 17,
+      "n_outer_test_lineages": 21,
+      "shuffle_accuracy": 0.8791666666666667,
+      "rank_fraction_global_gt_local": 0.9661458333333334,
+      "strong_rank_fraction": 0.928125,
+      "local_displacement_mean": 0.06153653798003991,
+      "global_displacement_mean": 0.2601878449320793,
+      "global_minus_local": 0.1986513069520394,
+      "adjacency_accuracy": 0.6479166666666667,
+      "neighbor_top1_accuracy": 0.2635416666666667,
+      "primary_pass": true
+    },
+    {
+      "outer_fold": 4,
+      "best_epoch": 5,
+      "n_train": 460,
+      "n_inner_val": 319,
+      "n_outer_test": 186,
+      "n_train_lineages": 50,
+      "n_inner_val_lineages": 12,
+      "n_outer_test_lineages": 21,
+      "shuffle_accuracy": 0.8857638888888889,
+      "rank_fraction_global_gt_local": 0.9713541666666666,
+      "strong_rank_fraction": 0.94375,
+      "local_displacement_mean": 0.06414027437567711,
+      "global_displacement_mean": 0.25582457582155865,
+      "global_minus_local": 0.19168430144588156,
+      "adjacency_accuracy": 0.6411458333333333,
+      "neighbor_top1_accuracy": 0.271875,
+      "primary_pass": true
+    },
+    {
+      "outer_fold": 5,
+      "best_epoch": 5,
+      "n_train": 657,
+      "n_inner_val": 122,
+      "n_outer_test": 186,
+      "n_train_lineages": 56,
+      "n_inner_val_lineages": 7,
+      "n_outer_test_lineages": 20,
+      "shuffle_accuracy": 0.8,
+      "rank_fraction_global_gt_local": 0.9572916666666667,
+      "strong_rank_fraction": 0.9197916666666667,
+      "local_displacement_mean": 0.06473689079284668,
+      "global_displacement_mean": 0.2665209477146467,
+      "global_minus_local": 0.20178405692180001,
+      "adjacency_accuracy": 0.640625,
+      "neighbor_top1_accuracy": 0.2234375,
+      "primary_pass": true
+    }
+  ],
+  "aggregate_outer_metrics": {
+    "shuffle_accuracy": {
+      "mean": 0.8553472222222223,
+      "sd": 0.034920311688224896,
+      "median": 0.8685763888888889,
+      "min": 0.8,
+      "max": 0.8857638888888889
+    },
+    "rank_fraction_global_gt_local": {
+      "mean": 0.9548958333333333,
+      "sd": 0.015843095948586267,
+      "median": 0.9572916666666667,
+      "min": 0.93125,
+      "max": 0.9713541666666666
+    },
+    "strong_rank_fraction": {
+      "mean": 0.9219791666666668,
+      "sd": 0.018386228145453515,
+      "median": 0.925,
+      "min": 0.8932291666666666,
+      "max": 0.94375
+    },
+    "local_displacement_mean": {
+      "mean": 0.06949926155308882,
+      "sd": 0.008411763283292312,
+      "median": 0.06473689079284668,
+      "min": 0.06153653798003991,
+      "max": 0.0800759290655454
+    },
+    "global_displacement_mean": {
+      "mean": 0.25800671507914863,
+      "sd": 0.008974586440965365,
+      "median": 0.2601878449320793,
+      "min": 0.24365247736374537,
+      "max": 0.2665209477146467
+    },
+    "global_minus_local": {
+      "mean": 0.1885074535260598,
+      "sd": 0.014050058256202272,
+      "median": 0.19168430144588156,
+      "min": 0.16664580181241034,
+      "max": 0.20178405692180001
+    },
+    "adjacency_accuracy": {
+      "mean": 0.6286458333333333,
+      "sd": 0.020823565418441468,
+      "median": 0.640625,
+      "min": 0.5994791666666667,
+      "max": 0.6479166666666667
+    },
+    "neighbor_top1_accuracy": {
+      "mean": 0.23270833333333335,
+      "sd": 0.034523432687290655,
+      "median": 0.2234375,
+      "min": 0.1890625,
+      "max": 0.271875
+    }
+  },
+  "lineage_95_group_safe": true,
+  "inner_split_lineage_95_group_safe": true,
+  "models_trained_from_scratch": true,
+  "phenotype_labels_used": false,
+  "raw_fold_embeddings_directly_poolable": false,
+  "scientific_boundary": "Lineage-level structural representation robustness; not phenotype prediction.",
+  "next_step": "Proceed to Stage10B: 95%-lineage fold-matched real Stage04 controls."
+}

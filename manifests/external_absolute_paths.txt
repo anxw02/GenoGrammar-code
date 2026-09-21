@@ -1,0 +1,7 @@
+<HISTORICAL_ROOT>/paper_code/run.py:103:            ["<HISTORICAL_ROOT>/bioEnv/envs/esm2/bin/python", str(patched)],
+<HISTORICAL_ROOT>/paper_code/run.py:52:        "<HISTORICAL_ROOT>/08A2_explicit_neighborhood_ssl_smoke.py":
+<HISTORICAL_ROOT>/paper_code/run.py:54:        "<HISTORICAL_ROOT>/08_explicit_order_ssl/00_family_embeddings_276517x480.npy":
+<HISTORICAL_ROOT>/paper_code/run.py:56:        "<HISTORICAL_ROOT>/01_1_ani_robustness/06_FINAL_robust_ANI_blocks.csv":
+<HISTORICAL_ROOT>/paper_code/run.py:58:        "<HISTORICAL_ROOT>/06_family_esm2/02_family_representative_index.csv":
+<HISTORICAL_ROOT>/paper_code/run.py:60:        "<HISTORICAL_ROOT>/03_protein_families/03_gene_family_master.tsv.gz":
+<HISTORICAL_ROOT>/paper_code/run.py:73:        text = text.replace(f"<HISTORICAL_ROOT>/{name}", str(new))

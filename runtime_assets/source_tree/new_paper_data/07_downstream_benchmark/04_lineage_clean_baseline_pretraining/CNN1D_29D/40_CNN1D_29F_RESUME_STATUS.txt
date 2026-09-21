@@ -1,0 +1,5 @@
+model=CNN1D
+version=29F_resume
+output=/root/autodl-tmp/axw/new_paper_data/07_downstream_benchmark/04_lineage_clean_baseline_pretraining/CNN1D_29D
+return_code=1
+finish_time=2026-09-19 14:43:42 +0800

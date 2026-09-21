@@ -1,0 +1,41 @@
+{
+  "formal_outer_fold": 1,
+  "seed": 42,
+  "best_epoch": 5,
+  "n_train": 515,
+  "n_inner_val": 99,
+  "n_outer_test": 351,
+  "pretraining_inner_val": {
+    "loss": 2.0494534095128376,
+    "shuffle_accuracy": 0.3333333333333333,
+    "rank_fraction_global_gt_local": 0.9826388888888888,
+    "strong_rank_fraction": 0.0,
+    "local_displacement_mean": 5.420235296090444e-05,
+    "global_displacement_mean": 0.00012662303116586473,
+    "global_minus_local": 7.242067820496028e-05,
+    "adjacency_accuracy": 0.4979166666666667,
+    "neighbor_top1_accuracy": 0.021527777777777778
+  },
+  "outer_metrics": {
+    "loss": 1.1784932881593704,
+    "shuffle_accuracy": 0.3333333333333333,
+    "rank_fraction_global_gt_local": 0.98125,
+    "strong_rank_fraction": 0.8833333333333333,
+    "local_displacement_mean": 0.03876201957464218,
+    "global_displacement_mean": 0.12368960008025169,
+    "global_minus_local": 0.0849275805056095,
+    "adjacency_accuracy": 0.6177083333333333,
+    "neighbor_top1_accuracy": 0.19114583333333332
+  },
+  "criteria": {
+    "shuffle_accuracy_pass": false,
+    "rank_fraction_pass": true,
+    "global_displacement_pass": true,
+    "global_minus_local_pass": true
+  },
+  "primary_pass": true,
+  "phenotype_labels_used": false,
+  "outer_holdout_used_for_training": false,
+  "outer_holdout_used_for_early_stopping": false,
+  "outer_holdout_used_for_model_selection": false
+}

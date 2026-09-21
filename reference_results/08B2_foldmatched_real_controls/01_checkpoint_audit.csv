@@ -1,0 +1,6 @@
+outer_fold,n_outer_genomes,best_epoch,checkpoint,checkpoint_sha256,B1_primary_pass
+1,195,4,/root/autodl-tmp/axw/08B_formal_5fold_order_ssl/fold_1/best_checkpoint.pt,a00a30115449136af35e2373a55b42d5f6650e1379c477f705a3ee0f92ba5319,True
+2,190,5,/root/autodl-tmp/axw/08B_formal_5fold_order_ssl/fold_2/best_checkpoint.pt,93860664e94b30e3680b83032bafae27cdb553ed45da79bccecca00e7f6a91f4,True
+3,195,5,/root/autodl-tmp/axw/08B_formal_5fold_order_ssl/fold_3/best_checkpoint.pt,da8191f0ca2fab3159152ac279d36b0cc80b34bced51689cbd5615d2ebdb70bb,True
+4,193,5,/root/autodl-tmp/axw/08B_formal_5fold_order_ssl/fold_4/best_checkpoint.pt,b30450757098daaa1f1881726c87fbd2f34abd350415487599090cc2eca0c374,True
+5,192,4,/root/autodl-tmp/axw/08B_formal_5fold_order_ssl/fold_5/best_checkpoint.pt,591de0ab6fd69c30ac489dfacce28315791b1a94cb2418a43b0b3a655b2cf865,True

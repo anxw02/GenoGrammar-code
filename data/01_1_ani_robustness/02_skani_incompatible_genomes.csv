@@ -1,0 +1,2 @@
+﻿strain_entity_id,canonical_genome_path,total_bp,contigs,largest_contig_bp,skani_compatible,exclusion_reason
+STRAIN_000003,/root/autodl-tmp/axw/01_ani_foundation/canonical_genomes/STRAIN_000003.fa.gz,7264,25,440,False,NO_CONTIG_GE_500BP

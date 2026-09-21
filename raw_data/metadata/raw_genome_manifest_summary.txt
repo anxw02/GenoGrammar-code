@@ -1,0 +1,6 @@
+genome_files=1086
+resolved_by_filename=1068
+resolved_by_metadata=0
+ambiguous=1
+unresolved=17
+unique_resolved_accessions=1055

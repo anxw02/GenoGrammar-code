@@ -1,0 +1,4 @@
+model=SmallTransformer
+version=29G
+return_code=0
+finish_time=2026-09-19 16:30:38 +0800

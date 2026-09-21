@@ -1,0 +1,4 @@
+model=BiGRU
+version=29G
+return_code=0
+finish_time=2026-09-19 15:25:14 +0800

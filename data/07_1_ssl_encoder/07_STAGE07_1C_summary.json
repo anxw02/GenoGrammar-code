@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-14T20:00:41.363587",
+  "phenotype_labels_used": false,
+  "genomes": 979,
+  "outer_folds": 5,
+  "outer_holdout_total": 979,
+  "outer_holdout_used_for_training": false,
+  "outer_holdout_used_for_early_stopping": false,
+  "nearclone_block_leakage": false,
+  "genome_embedding_dimension": 256,
+  "outer_total_ssl_loss_mean": 1.4464189914891168,
+  "outer_total_ssl_loss_sd": 0.04792536733092428,
+  "outer_reconstruction_loss_mean": 0.08987517257133808,
+  "outer_reconstruction_loss_sd": 0.010725467543679,
+  "outer_adjacency_loss_mean": 0.6920049504576273,
+  "outer_adjacency_loss_sd": 0.003055010835693654,
+  "outer_contrastive_loss_mean": 5.052706718444824,
+  "outer_contrastive_loss_sd": 0.2628822355583281,
+  "fold_specific_embedding_spaces": [
+    "SSL_FOLD_1",
+    "SSL_FOLD_2",
+    "SSL_FOLD_3",
+    "SSL_FOLD_4",
+    "SSL_FOLD_5"
+  ],
+  "raw_fold_embeddings_directly_poolable": false,
+  "reason": "Independently trained encoders can differ by latent-space rotation/reflection/permutation.",
+  "next_stage": "Stage07.2 structural control evaluation: TRUE vs LOCAL_W10 vs TIGHTBLOCK50 vs GLOBAL_CONTIG vs ORDER_INVARIANT_CONTENT.",
+  "scientific_boundary": "Stage07.1C evaluates self-supervised genome-grammar learning only. It is not probiotic phenotype prediction."
+}

@@ -1,0 +1,6 @@
+outer_fold,inner_train_genomes,inner_val_genomes,outer_holdout_genomes,inner_train_blocks,inner_val_blocks,outer_holdout_blocks,train_inner_val_overlap,train_outer_overlap,inner_val_outer_overlap,outer_used_for_training,outer_used_for_early_stopping
+1,705,78,196,339,43,94,0,0,0,False,False
+2,705,78,196,345,36,95,0,0,0,False,False
+3,704,79,196,320,60,96,0,0,0,False,False
+4,705,78,196,335,45,96,0,0,0,False,False
+5,698,86,195,346,35,95,0,0,0,False,False

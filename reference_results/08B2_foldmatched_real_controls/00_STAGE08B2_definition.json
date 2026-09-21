@@ -1,0 +1,40 @@
+{
+  "stage": "Stage08B2",
+  "created": "2026-09-15T10:05:56.211159",
+  "stage08B1_status": "PASS_FROZEN",
+  "fold_matched_encoders": true,
+  "n_outer_folds": 5,
+  "expected_total_genomes": 965,
+  "controls": [
+    "LOCAL_W10",
+    "TIGHTBLOCK50",
+    "GLOBAL_CONTIG"
+  ],
+  "seeds": [
+    42,
+    142,
+    242,
+    342,
+    442
+  ],
+  "expected_structural_order": "GLOBAL_CONTIG > LOCAL_W10 > TIGHTBLOCK50",
+  "window_len": 64,
+  "window_stride": 32,
+  "genome_aggregation": "Equal-weight mean of frozen 64-gene A2 window embeddings, followed by L2 normalization.",
+  "contig_policy": "Within-contig windows only; never bridge contigs.",
+  "formal_fold_criteria": {
+    "median_global_displacement_min": 0.01,
+    "fraction_global_gt_local_min": 0.7,
+    "fraction_global_gt_tight_min": 0.7,
+    "median_global_minus_local_min": 0.01,
+    "required_seed_order_count": 4
+  },
+  "required_pass_folds": 4,
+  "phenotype_labels_used": false,
+  "encoder_retrained": false,
+  "encoder_finetuned": false,
+  "optimizer_used": false,
+  "raw_fold_embeddings_directly_poolable": false,
+  "pooled_quantity": "Scalar TRUE-control cosine displacement only.",
+  "scientific_boundary": "Structural representation validation, not probiotic phenotype prediction."
+}

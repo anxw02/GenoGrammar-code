@@ -1,0 +1,6 @@
+outer_fold,train_genomes,val_genomes,outer_genomes,train_lineages,val_lineages,outer_lineages,train_val_lineage_overlap,train_outer_lineage_overlap,val_outer_lineage_overlap
+1,515,99,351,64,4,15,0,0,0
+2,748,149,68,52,14,17,0,0,0
+3,648,149,168,55,11,17,0,0,0
+4,648,103,214,54,12,17,0,0,0
+5,701,100,164,57,9,17,0,0,0
