@@ -1,8 +1,8 @@
-# GenoGramma reproducibility
+# GenoGrammar reproducibility
 
 ## Formal scope
 
-GenoGramma learns order-sensitive local genomic neighborhood
+GenoGrammar learns order-sensitive local genomic neighborhood
 representations.
 
 The formal downstream task is DOOR2-derived adjacent-gene
@@ -35,7 +35,7 @@ ANI95 lineage-blocked five-fold out-of-fold evaluation.
 
 The public fresh workflow starts from:
 
-- packaged pretrained lineage-clean GenoGramma checkpoints
+- packaged pretrained lineage-clean GenoGrammar checkpoints
 - packaged family embeddings
 - formal Stage50 downstream inputs
 
