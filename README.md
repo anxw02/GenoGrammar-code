@@ -1,8 +1,8 @@
-# GenoGramma
+# GenoGrammar
 
-**GenoGramma** is a genome-representation framework for learning **order-sensitive local genomic neighborhood representations**.
+**GenoGrammar** is a genome-representation framework for learning **order-sensitive local genomic neighborhood representations**.
 
-This repository contains the code, pretrained model assets, frozen downstream inputs, reference results, and reproducibility workflow used for the formal GenoGramma evaluation on **DOOR2-derived adjacent-gene operon-status prediction**.
+This repository contains the code, pretrained model assets, frozen downstream inputs, reference results, and reproducibility workflow used for the formal GenoGrammar evaluation on **DOOR2-derived adjacent-gene operon-status prediction**.
 
 The public workflow is organized around a single main entry point:
 
@@ -14,15 +14,15 @@ Users normally do **not** need to execute the individual stage scripts or shell 
 
 ---
 
-## 1. What does GenoGramma do?
+## 1. What does GenoGrammar do?
 
-For each target adjacent-gene pair, GenoGramma represents the surrounding **local genomic neighborhood** while preserving information related to gene order and local context.
+For each target adjacent-gene pair, GenoGrammar represents the surrounding **local genomic neighborhood** while preserving information related to gene order and local context.
 
 The formal downstream task asks whether a target pair of adjacent genes is annotated as belonging to the same operon according to DOOR2-derived computational annotations.
 
-The formal representation evaluated in this repository is the preregistered **768-dimensional GenoGramma pair-aware representation**.
+The formal representation evaluated in this repository is the preregistered **768-dimensional GenoGrammar pair-aware representation**.
 
-GenoGramma should therefore be interpreted as a model of **local genomic organization** within the neighborhood scope evaluated here.
+GenoGrammar should therefore be interpreted as a model of **local genomic organization** within the neighborhood scope evaluated here.
 
 ---
 
@@ -57,9 +57,9 @@ The formal evaluation therefore covers:
 
 ---
 
-## 4. Frozen formal GenoGramma result
+## 4. Frozen formal GenoGrammar result
 
-| Metric | GenoGramma |
+| Metric | GenoGrammar |
 |---|---:|
 | ROC-AUC | 0.860914 |
 | PR-AUC | 0.803928 |
@@ -67,7 +67,7 @@ The formal evaluation therefore covers:
 | F1 | 0.743938 |
 | MCC | 0.536842 |
 
-The frozen result corresponds to the formal GenoGramma pair-aware representation evaluated under ANI95 lineage-blocked OOF-5CV.
+The frozen result corresponds to the formal GenoGrammar pair-aware representation evaluated under ANI95 lineage-blocked OOF-5CV.
 
 ---
 
@@ -75,15 +75,15 @@ The frozen result corresponds to the formal GenoGramma pair-aware representation
 
 | Model | ROC-AUC | PR-AUC |
 |---|---:|---:|
-| GenoGramma | 0.860914 | 0.803928 |
+| GenoGrammar | 0.860914 | 0.803928 |
 | TransformerSmall | 0.853748 | 0.787762 |
 | MeanPool | 0.844809 | 0.780923 |
 | BiGRU | 0.804038 | 0.735335 |
 | CNN1D | 0.733892 | 0.688869 |
 
-GenoGramma produced the highest point estimates among these matched pair-aware baselines.
+GenoGrammar produced the highest point estimates among these matched pair-aware baselines.
 
-However, **statistical superiority over TransformerSmall is not claimed**, because the corresponding same-strand equal-lineage bootstrap confidence interval for the GenoGramma-versus-TransformerSmall difference crosses zero.
+However, **statistical superiority over TransformerSmall is not claimed**, because the corresponding same-strand equal-lineage bootstrap confidence interval for the GenoGrammar-versus-TransformerSmall difference crosses zero.
 
 ---
 
@@ -104,28 +104,28 @@ They should not be generalized beyond the local-neighborhood scope evaluated her
 
 ## 7. Reproducibility scope
 
-The public package provides manuscript reproduction, end-to-end GenoGramma retraining, and compatible-window inference.
+The public package provides manuscript reproduction, end-to-end GenoGrammar retraining, and compatible-window inference.
 
 The fresh downstream workflow starts from:
 
-- lineage-clean pretrained GenoGramma checkpoints;
+- lineage-clean pretrained GenoGrammar checkpoints;
 - packaged family embeddings;
 - the frozen formal Stage50 downstream inputs;
 - supporting model assets required by the downstream workflow.
 
 It reproduces:
 
-1. Stage55 — GenoGramma pair-aware representation extraction;
-2. Stage56 — formal GenoGramma downstream probe;
+1. Stage55 — GenoGrammar pair-aware representation extraction;
+2. Stage56 — formal GenoGrammar downstream probe;
 3. Stage57B2 — native matched baseline pair-state extraction;
 4. Stage57C — matched pair-aware baseline comparison;
 5. Stage58A — strand-shortcut robustness audit;
 6. Stage58B — ANI95 lineage-level baseline bootstrap;
-7. Stage59A — GenoGramma 768D representation ablation;
+7. Stage59A — GenoGrammar 768D representation ablation;
 8. Stage59B — ablation ANI95 lineage bootstrap;
 9. Stage60 — final operon evidence freeze.
 
-The manuscript reproduction route uses packaged pretrained assets; train.py separately provides new GenoGramma SSL and downstream training.
+The manuscript reproduction route uses packaged pretrained assets; train.py separately provides new GenoGrammar SSL and downstream training.
 
 This distinction is intentional and should be preserved when describing reproducibility.
 
@@ -240,7 +240,7 @@ This is expected behavior.
 The command should finish with:
 
 ```text
-[FINAL PASS] GenoGramma training/evaluation orchestration complete
+[FINAL PASS] GenoGrammar training/evaluation orchestration complete
 ```
 
 and report:
@@ -315,13 +315,13 @@ Neither mode should be interpreted as rerunning the complete historical self-sup
 The repository contains nine small shell wrappers:
 
 ```text
-run_stage55_genogramma_pairaware.sh
-run_stage56_genogramma_pairaware_probe.sh
+run_stage55_GenoGrammar_pairaware.sh
+run_stage56_GenoGrammar_pairaware_probe.sh
 run_stage57B2_native_matched_features.sh
 run_stage57C_matched_pairaware_comparison.sh
 run_stage58A_strand_shortcut_audit.sh
 run_stage58B_lineage_bootstrap.sh
-run_stage59A_genogramma_768d_ablation.sh
+run_stage59A_GenoGrammar_768d_ablation.sh
 run_stage59B_ablation_lineage_bootstrap.sh
 run_stage60_final_operon_evidence_freeze.sh
 ```
@@ -335,13 +335,13 @@ For normal use, invoke `python run.py` rather than running these shell wrappers 
 ## 13. Formal Stage55-60 workflow
 
 ```text
-Stage55   GenoGramma pair-aware representation extraction
-Stage56   Formal GenoGramma downstream probe
+Stage55   GenoGrammar pair-aware representation extraction
+Stage56   Formal GenoGrammar downstream probe
 Stage57B2 Native matched baseline pair-state extraction
 Stage57C  Matched pair-aware baseline comparison
 Stage58A  Strand-shortcut robustness audit
 Stage58B  ANI95 lineage-level baseline bootstrap
-Stage59A  GenoGramma 768D representation ablation
+Stage59A  GenoGrammar 768D representation ablation
 Stage59B  Ablation ANI95 lineage bootstrap
 Stage60   Final operon evidence freeze
 ```
@@ -364,10 +364,10 @@ To verify distributed files from the repository root:
 sha256sum -c MANIFEST.sha256
 ```
 
-Canonical GenoGramma implementation:
+Canonical GenoGrammar implementation:
 
 ```text
-pipeline/revision_modules/genogramma.py
+pipeline/revision_modules/GenoGrammar.py
 ```
 
 Canonical SHA256:
@@ -390,7 +390,7 @@ Frozen formal Stage50 input SHA256:
    They are not direct experimental measurements.
 
 2. **The formal task is local.**  
-   GenoGramma is evaluated as an order-sensitive local genomic neighborhood representation model.
+   GenoGrammar is evaluated as an order-sensitive local genomic neighborhood representation model.
 
 3. **Lineage structure is explicitly controlled.**  
    The principal evaluation uses ANI95 lineage-blocked cross-validation rather than random example splitting.
@@ -399,7 +399,7 @@ Frozen formal Stage50 input SHA256:
    A dedicated same-strand analysis is therefore included to assess residual predictive signal.
 
 5. **The TransformerSmall comparison should not be overstated.**  
-   GenoGramma has higher point estimates, but statistical superiority over TransformerSmall is not established by the lineage-level bootstrap analysis.
+   GenoGrammar has higher point estimates, but statistical superiority over TransformerSmall is not established by the lineage-level bootstrap analysis.
 
 6. **The public fresh workflow begins from pretrained assets.**  
    Stage55-60 downstream reproducibility should not be described as complete retraining from raw genomes.
@@ -436,7 +436,7 @@ for additional details about the packaged reproduction boundary and workflow.
 
 - run.py: reproduce and audit the formal manuscript Stage55-60 workflow.
 
-- train.py: train GenoGramma SSL encoders and downstream heads; the default route starts from raw genomes.
+- train.py: train GenoGrammar SSL encoders and downstream heads; the default route starts from raw genomes.
 
 - test.py: smoke/audit plus compatible-window embedding and task-specific prediction.
 
@@ -454,4 +454,4 @@ For exact CUDA reproduction of formal Stage55 representations, use batch size 25
 
 
 
-ESM-2 is pretrained. GenoGramma SSL encoders and downstream heads are trained separately in the train.py workflow.
+ESM-2 is pretrained. GenoGrammar SSL encoders and downstream heads are trained separately in the train.py workflow.
