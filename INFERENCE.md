@@ -1,4 +1,4 @@
-# GenoGramma Inference
+# GenoGrammar Inference
 
 `test.py` is the public pretrained-model interface.
 
@@ -8,11 +8,11 @@
 python test.py --audit-only
 ```
 
-The package contains five formal lineage-controlled GenoGramma pretrained checkpoints.
+The package contains five formal lineage-controlled GenoGrammar pretrained checkpoints.
 
 ## Intended custom-data modes
 
-Extract GenoGramma representations:
+Extract GenoGrammar representations:
 
 ```bash
 python test.py --mode embed --input <input>
@@ -24,7 +24,7 @@ Use a compatible downstream task head:
 python test.py --mode predict --input <input>
 ```
 
-A pretrained GenoGramma encoder does not automatically provide zero-shot predictions for arbitrary biological phenotypes. A compatible downstream task head is required.
+A pretrained GenoGrammar encoder does not automatically provide zero-shot predictions for arbitrary biological phenotypes. A compatible downstream task head is required.
 
 Raw-genome custom-data preprocessing will be enabled together with the verified ESM2/protein-family preprocessing route.
 
@@ -46,7 +46,7 @@ Compatible NPZ input:
 
 
 
-Extract the 768D GenoGramma representation:
+Extract the 768D GenoGrammar representation:
 
 
 
@@ -62,7 +62,7 @@ Run the bundled formal DOOR2-derived operon-status predictor:
 
 
 
-Prediction uses the matching GenoGramma fold, the checkpoint zscore_mean and zscore_sd, and the formal 768 -> 128 -> GELU -> Dropout -> 2 head.
+Prediction uses the matching GenoGrammar fold, the checkpoint zscore_mean and zscore_sd, and the formal 768 -> 128 -> GELU -> Dropout -> 2 head.
 
 
 
